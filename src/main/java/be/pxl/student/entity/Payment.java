@@ -1,33 +1,47 @@
 package be.pxl.student.entity;
 
-import java.util.Date;
+import javax.persistence.*;
+import java.time.LocalDateTime;
 
+@Entity
 public class Payment {
 
-    private Date date;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int Id;
+    private LocalDateTime date;
     private float amount;
     private String currency;
     private String detail;
+    @ManyToOne
+    private Account account;
 
-    public Payment(Date date, float amount, String currency, String detail) {
+    public Payment() {}
+
+    public Payment(LocalDateTime date, float amount, String currency, String detail) {
         this.date = date;
         this.amount = amount;
         this.currency = currency;
         this.detail = detail;
     }
 
-    public Date getDate() {
-        return date;
+    public int getId() {
+        return Id;
+    }
+    public void setId(int id) {
+        Id = id;
     }
 
-    public void setDate(Date date) {
+    public LocalDateTime getDate() {
+        return date;
+    }
+    public void setDate(LocalDateTime date) {
         this.date = date;
     }
 
     public float getAmount() {
         return amount;
     }
-
     public void setAmount(float amount) {
         this.amount = amount;
     }
@@ -35,7 +49,6 @@ public class Payment {
     public String getCurrency() {
         return currency;
     }
-
     public void setCurrency(String currency) {
         this.currency = currency;
     }
@@ -43,7 +56,6 @@ public class Payment {
     public String getDetail() {
         return detail;
     }
-
     public void setDetail(String detail) {
         this.detail = detail;
     }
