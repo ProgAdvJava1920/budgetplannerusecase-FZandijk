@@ -52,25 +52,24 @@ public class BudgetPlannerImporter {
                     LOGGER.debug(mapper.map(line));
 
                     MappedLine result = mapper.map(line);
+                    Account theAccount = result.getAccount();
+                    Payment thePayment = result.getPayment();
                     String iban = result.getAccount().getIBAN();
-                    if (!accounts.containsKey(iban)) {
-                        //add to map of accounts
-                        Account accountToAdd = result.getAccount();
-                        accountToAdd.getPayments().add(result.getPayment());
-                        accounts.put(iban, accountToAdd);
+                    thePayment.setAccount(theAccount);
+                    if (!accounts.containsKey(iban)) { //account not in map, add
+                        theAccount.addPayment(thePayment);
+                        accounts.put(iban, theAccount);
                     } else {
-                        //update payments in map
-                        accounts.get(iban).getPayments().add(result.getPayment());
+                        accounts.get(iban).addPayment(thePayment);
                     }
                 } catch (InvalidPaymentException ex) {
                     LOGGER.error("Error while mapping line: {}", ex.getMessage());
                 }
             }
-
+            //save entries in map to db
             entityManagerFactory = Persistence.createEntityManagerFactory("budgetplanner_pu");
             entityManager = entityManagerFactory.createEntityManager();
             EntityTransaction transaction = entityManager.getTransaction();
-            //save entries in map to db
             transaction.begin();
             accounts.forEach((k, v) -> {
                 entityManager.persist(v);

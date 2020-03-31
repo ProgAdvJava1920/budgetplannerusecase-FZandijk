@@ -60,6 +60,14 @@ public class Payment {
         this.detail = detail;
     }
 
+    public Account getAccount() {
+        return account;
+    }
+
+    public void setAccount(Account account) {
+        this.account = account;
+    }
+
     @Override
     public String toString() {
         return "{" +

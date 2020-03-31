@@ -13,7 +13,7 @@ public class Account {
     @Id
     private String IBAN;
     private String name;
-    @OneToMany(mappedBy = "account")
+    @OneToMany(mappedBy = "account", cascade = CascadeType.PERSIST)
     private List<Payment> payments = new ArrayList<>();
 
     public Account() {}
@@ -35,6 +35,10 @@ public class Account {
 
     public List<Payment> getPayments() {
         return payments;
+    }
+    public void addPayment(Payment payment) {
+        payment.setAccount(this);
+        this.payments.add(payment);
     }
     public void setPayments(List<Payment> payments) {
         this.payments = payments;
