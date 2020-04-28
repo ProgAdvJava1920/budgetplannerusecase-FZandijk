@@ -1,0 +1,4 @@
+2020-04-28 13:50:35,580 DEBUG o.j.logging [http-nio-8080-exec-4] Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+2020-04-28 13:58:19,962 DEBUG o.j.logging [http-nio-8080-exec-3] Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+2020-04-28 14:00:19,209 DEBUG o.j.logging [http-nio-8080-exec-3] Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+2020-04-28 14:01:35,112 DEBUG o.j.logging [http-nio-8080-exec-3] Logging Provider: org.jboss.logging.Log4j2LoggerProvider

@@ -24,6 +24,8 @@ public class AccountsRest {
         EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("budgetplanner_pu");
         EntityManager entityManager = entityManagerFactory.createEntityManager();
         IAccountService accountService = new AccountService(entityManager);
+        entityManager.close();
+        entityManagerFactory.close();
         return accountService.getPaymentsOfAccountName(accountName);
     }
 }

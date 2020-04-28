@@ -1,0 +1,7 @@
+0:0:0:0:0:0:0:1 - - [28/Apr/2020:13:50:21 +0200] "POST /BudgetPlanner/api/accounts/Leonila HTTP/1.1" 405 -
+0:0:0:0:0:0:0:1 - - [28/Apr/2020:13:50:38 +0200] "GET /BudgetPlanner/api/accounts/Leonila HTTP/1.1" 204 -
+0:0:0:0:0:0:0:1 - - [28/Apr/2020:13:52:16 +0200] "GET /BudgetPlanner/api/accounts/Leonila HTTP/1.1" 204 -
+0:0:0:0:0:0:0:1 - - [28/Apr/2020:13:58:21 +0200] "GET /BudgetPlanner/api/accounts/%7BLeonila%7D HTTP/1.1" 204 -
+0:0:0:0:0:0:0:1 - - [28/Apr/2020:14:00:20 +0200] "GET /BudgetPlanner/api/accounts/test HTTP/1.1" 204 -
+0:0:0:0:0:0:0:1 - - [28/Apr/2020:14:01:38 +0200] "GET /BudgetPlanner/api/accounts/test HTTP/1.1" 204 -
+0:0:0:0:0:0:0:1 - - [28/Apr/2020:14:02:08 +0200] "GET /BudgetPlanner/api/accounts/test HTTP/1.1" 204 -

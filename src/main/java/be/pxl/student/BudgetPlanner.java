@@ -28,14 +28,14 @@ public class BudgetPlanner {
 //        new BudgetPlannerImporter().importCsv(Paths.get("src/main/resources/account_payments.csv"));
 //        LOGGER.info("finished reading file");
 
-        entityManagerFactory = Persistence.createEntityManagerFactory("budgetplanner_pu");
-        entityManager = entityManagerFactory.createEntityManager();
-
-        IAccountService accountService = new AccountService(entityManager);
-        accountService.getAccountByName("Leonila");
-
-        entityManager.close();
-        entityManagerFactory.close();
+//        entityManagerFactory = Persistence.createEntityManagerFactory("budgetplanner_pu");
+//        entityManager = entityManagerFactory.createEntityManager();
+//
+//        IAccountService accountService = new AccountService(entityManager);
+//        accountService.getAccountByName("Leonila");
+//
+//        entityManager.close();
+//        entityManagerFactory.close();
     }
 }
 
