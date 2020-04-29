@@ -15,7 +15,10 @@ public class AccountService implements IAccountService {
 
     @Override
     public List<Payment> getPaymentsOfAccountName(String accountName) {
-        return null;
+        TypedQuery<Payment> getPaymentsByAccountNameQuery = entityManager.createQuery("SELECT p FROM Payment p WHERE p.account_IBAN = :iban", Payment.class);
+        Account account = getAccountByName(accountName);
+        getPaymentsByAccountNameQuery.setParameter("iban", account.getIBAN());
+        return getPaymentsByAccountNameQuery.getResultList();
     }
 
     @Override
