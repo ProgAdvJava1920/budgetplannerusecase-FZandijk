@@ -25,8 +25,7 @@ public class AccountService implements IAccountService {
     public Account getAccountByName(String accountName) {
         TypedQuery<Account> getAccountByNameQuery = entityManager.createQuery("SELECT a FROM Account a WHERE a.name = :name", Account.class);
         getAccountByNameQuery.setParameter("name", accountName);
-        Account result = getAccountByNameQuery.getSingleResult();
-        return result;
+        return getAccountByNameQuery.getSingleResult();
     }
 
 

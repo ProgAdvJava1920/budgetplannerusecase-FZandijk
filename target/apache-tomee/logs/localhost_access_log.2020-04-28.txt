@@ -1,5 +1,0 @@
-0:0:0:0:0:0:0:1 - - [28/Apr/2020:22:13:21 +0200] "GET /BudgetPlanner/api/accounts/Leonila HTTP/1.1" 500 4767
-0:0:0:0:0:0:0:1 - - [28/Apr/2020:22:16:34 +0200] "GET /BudgetPlanner/api/accounts/Leonila HTTP/1.1" 500 4767
-0:0:0:0:0:0:0:1 - - [28/Apr/2020:22:17:27 +0200] "GET /BudgetPlanner/api/accounts/Leonila HTTP/1.1" 500 4767
-0:0:0:0:0:0:0:1 - - [28/Apr/2020:22:22:00 +0200] "GET /BudgetPlanner/api/accounts/Leonila HTTP/1.1" 500 4767
-0:0:0:0:0:0:0:1 - - [28/Apr/2020:22:25:56 +0200] "GET /BudgetPlanner/api/accounts/Leonila HTTP/1.1" 500 4767

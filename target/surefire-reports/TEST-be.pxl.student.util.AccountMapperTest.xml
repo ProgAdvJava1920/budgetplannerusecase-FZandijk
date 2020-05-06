@@ -43,7 +43,7 @@
     <property name="java.class.path" value="C:\Users\11601686\Documents\apache-maven-3.6.0-bin\apache-maven-3.6.0\bin\..\boot\plexus-classworlds-2.5.2.jar"/>
     <property name="java.vm.specification.version" value="14"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean package tomee:debug"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean package tomee:run"/>
     <property name="java.home" value="C:\Program Files\Java\jdk-14"/>
     <property name="user.language" value="nl"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>

@@ -3,10 +3,12 @@ be\pxl\student\services\IAccountService.class
 be\pxl\student\util\BudgetPlannerImporter.class
 be\pxl\student\util\AccountMapper.class
 be\pxl\student\BudgetPlanner.class
+be\pxl\student\dto\PaymentDTO.class
 be\pxl\student\entity\Account.class
 be\pxl\student\rest\RestApplication.class
 be\pxl\student\services\AccountService.class
 be\pxl\student\util\BudgetPlannerFeeder.class
 be\pxl\student\util\InvalidPaymentException.class
 be\pxl\student\util\MappedLine.class
+be\pxl\student\dto\AccountDTO.class
 be\pxl\student\entity\Payment.class

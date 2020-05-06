@@ -1,1 +1,847 @@
-2020-04-28 22:13:19,331 DEBUG o.j.logging [http-nio-8080-exec-2] Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+2020-05-06 08:46:13,271 DEBUG o.j.logging [main] Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+2020-05-06 08:46:13,317 TRACE o.h.j.HibernatePersistenceProvider [main] Starting createContainerEntityManagerFactory : budgetplanner_pu
+2020-05-06 08:46:13,420 DEBUG o.h.j.i.u.LogHelper [main] PersistenceUnitInfo [
+	name: budgetplanner_pu
+	persistence provider classname: org.hibernate.jpa.HibernatePersistenceProvider
+	classloader: TomEEWebappClassLoader
+  context: BudgetPlanner
+  delegate: false
+----------> Parent Classloader:
+java.net.URLClassLoader@47f37ef1
+
+	excludeUnlistedClasses: false
+	JTA datasource: org.apache.openejb.resource.jdbc.managed.local.ManagedDataSource@3d96fa9e
+	Non JTA datasource: org.apache.tomee.jdbc.TomEEDataSourceCreator$TomEEDataSource@7d3fb0ef{ConnectionPool[defaultAutoCommit=null; defaultReadOnly=null; defaultTransactionIsolation=-1; defaultCatalog=null; driverClassName=org.hsqldb.jdbcDriver; maxActive=100; maxIdle=100; minIdle=10; initialSize=10; maxWait=30000; testOnBorrow=false; testOnReturn=false; timeBetweenEvictionRunsMillis=5000; numTestsPerEvictionRun=0; minEvictableIdleTimeMillis=60000; testWhileIdle=false; testOnConnect=false; password=********; url=jdbc:hsqldb:file:C:\Users\11601686\Documents\School\AON\Programming Advanced\Java Advanced\Code\budgetplannerusecase-FZandijk\target\apache-tomee\data\hsqldb\hsqldb; username=sa; validationQuery=null; validationQueryTimeout=-1; validatorClassName=null; validationInterval=3000; accessToUnderlyingConnectionAllowed=true; removeAbandoned=false; removeAbandonedTimeout=60; logAbandoned=false; connectionProperties=null; initSQL=null; jdbcInterceptors=null; jmxEnabled=true; fairQueue=true; useEquals=true; abandonWhenPercentageFull=0; maxAge=0; useLock=false; dataSource=null; dataSourceJNDI=null; suspectTimeout=0; alternateUsernameAllowed=false; commitOnReturn=false; rollbackOnReturn=false; useDisposableConnectionFacade=true; logValidationErrors=false; propagateInterruptState=false; ignoreExceptionOnPreLoad=false; useStatementFacade=true; }
+	Transaction type: JTA
+	PU root URL: file:/C:/Users/11601686/Documents/School/AON/Programming%20Advanced/Java%20Advanced/Code/budgetplannerusecase-FZandijk/target/apache-tomee/webapps/BudgetPlanner/WEB-INF/classes/
+	Shared Cache Mode: UNSPECIFIED
+	Validation Mode: AUTO
+	Jar files URLs []
+	Managed classes names []
+	Mapping files names []
+	Properties [
+		javax.persistence.jdbc.driver: com.mysql.jdbc.Driver
+		javax.persistence.jdbc.password: password
+		javax.persistence.jdbc.url: jdbc:mysql://localhost:3306/budgetplannerdb?useSSL=false
+		hibernate.show_sql: true
+		hibernate.hbm2ddl.auto: update
+		javax.persistence.jdbc.user: user
+		hibernate.transaction.jta.platform: org.apache.openejb.hibernate.OpenEJBJtaPlatform2]
+2020-05-06 08:46:13,505 DEBUG o.h.i.i.IntegratorServiceImpl [main] Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].
+2020-05-06 08:46:13,522 DEBUG o.h.i.i.IntegratorServiceImpl [main] Adding Integrator [org.hibernate.secure.spi.JaccIntegrator].
+2020-05-06 08:46:13,555 DEBUG o.h.i.i.IntegratorServiceImpl [main] Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].
+2020-05-06 08:46:13,619 TRACE o.h.b.r.s.i.StrategySelectorImpl [main] Registering named strategy selector [org.hibernate.dialect.Dialect] : [Cache71] -> [org.hibernate.dialect.Cache71Dialect]
+2020-05-06 08:46:13,622 TRACE o.h.b.r.s.i.StrategySelectorImpl [main] Registering named strategy selector [org.hibernate.dialect.Dialect] : [CUBRID] -> [org.hibernate.dialect.CUBRIDDialect]
+2020-05-06 08:46:13,626 TRACE o.h.b.r.s.i.StrategySelectorImpl [main] Registering named strategy selector [org.hibernate.dialect.Dialect] : [DB2] -> [org.hibernate.dialect.DB2Dialect]
+2020-05-06 08:46:13,630 TRACE o.h.b.r.s.i.StrategySelectorImpl [main] Registering named strategy selector [org.hibernate.dialect.Dialect] : [DB2390] -> [org.hibernate.dialect.DB2390Dialect]
+2020-05-06 08:46:13,633 TRACE o.h.b.r.s.i.StrategySelectorImpl [main] Registering named strategy selector [org.hibernate.dialect.Dialect] : [DB2390V8] -> [org.hibernate.dialect.DB2390V8Dialect]
+2020-05-06 08:46:13,637 TRACE o.h.b.r.s.i.StrategySelectorImpl [main] Registering named strategy selector [org.hibernate.dialect.Dialect] : [DB2400] -> [org.hibernate.dialect.DB2400Dialect]
+2020-05-06 08:46:13,639 TRACE o.h.b.r.s.i.StrategySelectorImpl [main] Registering named strategy selector [org.hibernate.dialect.Dialect] : [DB2400V7R3] -> [org.hibernate.dialect.DB2400V7R3Dialect]
+2020-05-06 08:46:13,645 TRACE o.h.b.r.s.i.StrategySelectorImpl [main] Registering named strategy selector [org.hibernate.dialect.Dialect] : [DerbyTenFive] -> [org.hibernate.dialect.DerbyTenFiveDialect]
+2020-05-06 08:46:13,648 TRACE o.h.b.r.s.i.StrategySelectorImpl [main] Registering named strategy selector [org.hibernate.dialect.Dialect] : [DerbyTenSix] -> [org.hibernate.dialect.DerbyTenSixDialect]
+2020-05-06 08:46:13,651 TRACE o.h.b.r.s.i.StrategySelectorImpl [main] Registering named strategy selector [org.hibernate.dialect.Dialect] : [DerbyTenSeven] -> [org.hibernate.dialect.DerbyTenSevenDialect]
+2020-05-06 08:46:13,657 TRACE o.h.b.r.s.i.StrategySelectorImpl [main] Registering named strategy selector [org.hibernate.dialect.Dialect] : [Firebird] -> [org.hibernate.dialect.FirebirdDialect]
+2020-05-06 08:46:13,660 TRACE o.h.b.r.s.i.StrategySelectorImpl [main] Registering named strategy selector [org.hibernate.dialect.Dialect] : [FrontBase] -> [org.hibernate.dialect.FrontBaseDialect]
+2020-05-06 08:46:13,664 TRACE o.h.b.r.s.i.StrategySelectorImpl [main] Registering named strategy selector [org.hibernate.dialect.Dialect] : [H2] -> [org.hibernate.dialect.H2Dialect]
+2020-05-06 08:46:13,670 TRACE o.h.b.r.s.i.StrategySelectorImpl [main] Registering named strategy selector [org.hibernate.dialect.Dialect] : [HANAColumnStore] -> [org.hibernate.dialect.HANAColumnStoreDialect]
+2020-05-06 08:46:13,673 TRACE o.h.b.r.s.i.StrategySelectorImpl [main] Registering named strategy selector [org.hibernate.dialect.Dialect] : [HANARowStore] -> [org.hibernate.dialect.HANARowStoreDialect]
+2020-05-06 08:46:13,677 TRACE o.h.b.r.s.i.StrategySelectorImpl [main] Registering named strategy selector [org.hibernate.dialect.Dialect] : [HSQL] -> [org.hibernate.dialect.HSQLDialect]
+2020-05-06 08:46:13,680 TRACE o.h.b.r.s.i.StrategySelectorImpl [main] Registering named strategy selector [org.hibernate.dialect.Dialect] : [Informix] -> [org.hibernate.dialect.InformixDialect]
+2020-05-06 08:46:13,685 TRACE o.h.b.r.s.i.StrategySelectorImpl [main] Registering named strategy selector [org.hibernate.dialect.Dialect] : [Ingres] -> [org.hibernate.dialect.IngresDialect]
+2020-05-06 08:46:13,689 TRACE o.h.b.r.s.i.StrategySelectorImpl [main] Registering named strategy selector [org.hibernate.dialect.Dialect] : [Ingres9] -> [org.hibernate.dialect.Ingres9Dialect]
+2020-05-06 08:46:13,692 TRACE o.h.b.r.s.i.StrategySelectorImpl [main] Registering named strategy selector [org.hibernate.dialect.Dialect] : [Ingres10] -> [org.hibernate.dialect.Ingres10Dialect]
+2020-05-06 08:46:13,692 TRACE o.h.b.r.s.i.StrategySelectorImpl [main] Registering named strategy selector [org.hibernate.dialect.Dialect] : [Interbase] -> [org.hibernate.dialect.InterbaseDialect]
+2020-05-06 08:46:13,697 TRACE o.h.b.r.s.i.StrategySelectorImpl [main] Registering named strategy selector [org.hibernate.dialect.Dialect] : [JDataStore] -> [org.hibernate.dialect.JDataStoreDialect]
+2020-05-06 08:46:13,701 TRACE o.h.b.r.s.i.StrategySelectorImpl [main] Registering named strategy selector [org.hibernate.dialect.Dialect] : [Mckoi] -> [org.hibernate.dialect.MckoiDialect]
+2020-05-06 08:46:13,706 TRACE o.h.b.r.s.i.StrategySelectorImpl [main] Registering named strategy selector [org.hibernate.dialect.Dialect] : [MimerSQL] -> [org.hibernate.dialect.MimerSQLDialect]
+2020-05-06 08:46:13,713 TRACE o.h.b.r.s.i.StrategySelectorImpl [main] Registering named strategy selector [org.hibernate.dialect.Dialect] : [MySQL5] -> [org.hibernate.dialect.MySQL5Dialect]
+2020-05-06 08:46:13,716 TRACE o.h.b.r.s.i.StrategySelectorImpl [main] Registering named strategy selector [org.hibernate.dialect.Dialect] : [MySQL5InnoDB] -> [org.hibernate.dialect.MySQL5InnoDBDialect]
+2020-05-06 08:46:13,719 TRACE o.h.b.r.s.i.StrategySelectorImpl [main] Registering named strategy selector [org.hibernate.dialect.Dialect] : [MySQL57InnoDB] -> [org.hibernate.dialect.MySQL57InnoDBDialect]
+2020-05-06 08:46:13,725 TRACE o.h.b.r.s.i.StrategySelectorImpl [main] Registering named strategy selector [org.hibernate.dialect.Dialect] : [MySQL57] -> [org.hibernate.dialect.MySQL57Dialect]
+2020-05-06 08:46:13,729 TRACE o.h.b.r.s.i.StrategySelectorImpl [main] Registering named strategy selector [org.hibernate.dialect.Dialect] : [MySQL8] -> [org.hibernate.dialect.MySQL8Dialect]
+2020-05-06 08:46:13,733 TRACE o.h.b.r.s.i.StrategySelectorImpl [main] Registering named strategy selector [org.hibernate.dialect.Dialect] : [Oracle8i] -> [org.hibernate.dialect.Oracle8iDialect]
+2020-05-06 08:46:13,737 TRACE o.h.b.r.s.i.StrategySelectorImpl [main] Registering named strategy selector [org.hibernate.dialect.Dialect] : [Oracle9i] -> [org.hibernate.dialect.Oracle9iDialect]
+2020-05-06 08:46:13,741 TRACE o.h.b.r.s.i.StrategySelectorImpl [main] Registering named strategy selector [org.hibernate.dialect.Dialect] : [Oracle10g] -> [org.hibernate.dialect.Oracle10gDialect]
+2020-05-06 08:46:13,744 TRACE o.h.b.r.s.i.StrategySelectorImpl [main] Registering named strategy selector [org.hibernate.dialect.Dialect] : [Pointbase] -> [org.hibernate.dialect.PointbaseDialect]
+2020-05-06 08:46:13,759 TRACE o.h.b.r.s.i.StrategySelectorImpl [main] Registering named strategy selector [org.hibernate.dialect.Dialect] : [PostgresPlus] -> [org.hibernate.dialect.PostgresPlusDialect]
+2020-05-06 08:46:13,759 TRACE o.h.b.r.s.i.StrategySelectorImpl [main] Registering named strategy selector [org.hibernate.dialect.Dialect] : [PostgreSQL81] -> [org.hibernate.dialect.PostgreSQL81Dialect]
+2020-05-06 08:46:13,759 TRACE o.h.b.r.s.i.StrategySelectorImpl [main] Registering named strategy selector [org.hibernate.dialect.Dialect] : [PostgreSQL82] -> [org.hibernate.dialect.PostgreSQL82Dialect]
+2020-05-06 08:46:13,762 TRACE o.h.b.r.s.i.StrategySelectorImpl [main] Registering named strategy selector [org.hibernate.dialect.Dialect] : [PostgreSQL9] -> [org.hibernate.dialect.PostgreSQL9Dialect]
+2020-05-06 08:46:13,765 TRACE o.h.b.r.s.i.StrategySelectorImpl [main] Registering named strategy selector [org.hibernate.dialect.Dialect] : [Progress] -> [org.hibernate.dialect.ProgressDialect]
+2020-05-06 08:46:13,768 TRACE o.h.b.r.s.i.StrategySelectorImpl [main] Registering named strategy selector [org.hibernate.dialect.Dialect] : [SAPDB] -> [org.hibernate.dialect.SAPDBDialect]
+2020-05-06 08:46:13,774 TRACE o.h.b.r.s.i.StrategySelectorImpl [main] Registering named strategy selector [org.hibernate.dialect.Dialect] : [SQLServer] -> [org.hibernate.dialect.SQLServerDialect]
+2020-05-06 08:46:13,777 TRACE o.h.b.r.s.i.StrategySelectorImpl [main] Registering named strategy selector [org.hibernate.dialect.Dialect] : [SQLServer2005] -> [org.hibernate.dialect.SQLServer2005Dialect]
+2020-05-06 08:46:13,802 TRACE o.h.b.r.s.i.StrategySelectorImpl [main] Registering named strategy selector [org.hibernate.dialect.Dialect] : [SQLServer2008] -> [org.hibernate.dialect.SQLServer2008Dialect]
+2020-05-06 08:46:13,810 TRACE o.h.b.r.s.i.StrategySelectorImpl [main] Registering named strategy selector [org.hibernate.dialect.Dialect] : [Sybase11] -> [org.hibernate.dialect.Sybase11Dialect]
+2020-05-06 08:46:13,814 TRACE o.h.b.r.s.i.StrategySelectorImpl [main] Registering named strategy selector [org.hibernate.dialect.Dialect] : [SybaseAnywhere] -> [org.hibernate.dialect.SybaseAnywhereDialect]
+2020-05-06 08:46:13,818 TRACE o.h.b.r.s.i.StrategySelectorImpl [main] Registering named strategy selector [org.hibernate.dialect.Dialect] : [SybaseASE15] -> [org.hibernate.dialect.SybaseASE15Dialect]
+2020-05-06 08:46:13,843 TRACE o.h.b.r.s.i.StrategySelectorImpl [main] Registering named strategy selector [org.hibernate.dialect.Dialect] : [SybaseASE157] -> [org.hibernate.dialect.SybaseASE157Dialect]
+2020-05-06 08:46:13,849 TRACE o.h.b.r.s.i.StrategySelectorImpl [main] Registering named strategy selector [org.hibernate.dialect.Dialect] : [Teradata] -> [org.hibernate.dialect.TeradataDialect]
+2020-05-06 08:46:13,854 TRACE o.h.b.r.s.i.StrategySelectorImpl [main] Registering named strategy selector [org.hibernate.dialect.Dialect] : [TimesTen] -> [org.hibernate.dialect.TimesTenDialect]
+2020-05-06 08:46:13,878 TRACE o.h.b.r.s.i.StrategySelectorImpl [main] Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [Atomikos] -> [org.hibernate.engine.transaction.jta.platform.internal.AtomikosJtaPlatform]
+2020-05-06 08:46:13,878 TRACE o.h.b.r.s.i.StrategySelectorImpl [main] Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [org.hibernate.service.jta.platform.internal.AtomikosJtaPlatform] -> [org.hibernate.engine.transaction.jta.platform.internal.AtomikosJtaPlatform]
+2020-05-06 08:46:13,881 TRACE o.h.b.r.s.i.StrategySelectorImpl [main] Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [Borland] -> [org.hibernate.engine.transaction.jta.platform.internal.BorlandEnterpriseServerJtaPlatform]
+2020-05-06 08:46:13,881 TRACE o.h.b.r.s.i.StrategySelectorImpl [main] Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [org.hibernate.service.jta.platform.internal.BorlandEnterpriseServerJtaPlatform] -> [org.hibernate.engine.transaction.jta.platform.internal.BorlandEnterpriseServerJtaPlatform]
+2020-05-06 08:46:13,883 TRACE o.h.b.r.s.i.StrategySelectorImpl [main] Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [Bitronix] -> [org.hibernate.engine.transaction.jta.platform.internal.BitronixJtaPlatform]
+2020-05-06 08:46:13,884 TRACE o.h.b.r.s.i.StrategySelectorImpl [main] Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [org.hibernate.service.jta.platform.internal.BitronixJtaPlatform] -> [org.hibernate.engine.transaction.jta.platform.internal.BitronixJtaPlatform]
+2020-05-06 08:46:13,888 TRACE o.h.b.r.s.i.StrategySelectorImpl [main] Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [JBossAS] -> [org.hibernate.engine.transaction.jta.platform.internal.JBossAppServerJtaPlatform]
+2020-05-06 08:46:13,888 TRACE o.h.b.r.s.i.StrategySelectorImpl [main] Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [org.hibernate.service.jta.platform.internal.JBossAppServerJtaPlatform] -> [org.hibernate.engine.transaction.jta.platform.internal.JBossAppServerJtaPlatform]
+2020-05-06 08:46:13,893 TRACE o.h.b.r.s.i.StrategySelectorImpl [main] Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [JBossTS] -> [org.hibernate.engine.transaction.jta.platform.internal.JBossStandAloneJtaPlatform]
+2020-05-06 08:46:13,894 TRACE o.h.b.r.s.i.StrategySelectorImpl [main] Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [org.hibernate.service.jta.platform.internal.JBossStandAloneJtaPlatform] -> [org.hibernate.engine.transaction.jta.platform.internal.JBossStandAloneJtaPlatform]
+2020-05-06 08:46:13,898 TRACE o.h.b.r.s.i.StrategySelectorImpl [main] Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [JOnAS] -> [org.hibernate.engine.transaction.jta.platform.internal.JOnASJtaPlatform]
+2020-05-06 08:46:13,898 TRACE o.h.b.r.s.i.StrategySelectorImpl [main] Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [org.hibernate.service.jta.platform.internal.JOnASJtaPlatform] -> [org.hibernate.engine.transaction.jta.platform.internal.JOnASJtaPlatform]
+2020-05-06 08:46:13,903 TRACE o.h.b.r.s.i.StrategySelectorImpl [main] Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [JOTM] -> [org.hibernate.engine.transaction.jta.platform.internal.JOTMJtaPlatform]
+2020-05-06 08:46:13,904 TRACE o.h.b.r.s.i.StrategySelectorImpl [main] Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [org.hibernate.service.jta.platform.internal.JOTMJtaPlatform] -> [org.hibernate.engine.transaction.jta.platform.internal.JOTMJtaPlatform]
+2020-05-06 08:46:13,908 TRACE o.h.b.r.s.i.StrategySelectorImpl [main] Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [JRun4] -> [org.hibernate.engine.transaction.jta.platform.internal.JRun4JtaPlatform]
+2020-05-06 08:46:13,908 TRACE o.h.b.r.s.i.StrategySelectorImpl [main] Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [org.hibernate.service.jta.platform.internal.JRun4JtaPlatform] -> [org.hibernate.engine.transaction.jta.platform.internal.JRun4JtaPlatform]
+2020-05-06 08:46:13,911 TRACE o.h.b.r.s.i.StrategySelectorImpl [main] Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [OC4J] -> [org.hibernate.engine.transaction.jta.platform.internal.OC4JJtaPlatform]
+2020-05-06 08:46:13,912 TRACE o.h.b.r.s.i.StrategySelectorImpl [main] Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [org.hibernate.service.jta.platform.internal.OC4JJtaPlatform] -> [org.hibernate.engine.transaction.jta.platform.internal.OC4JJtaPlatform]
+2020-05-06 08:46:13,915 TRACE o.h.b.r.s.i.StrategySelectorImpl [main] Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [Orion] -> [org.hibernate.engine.transaction.jta.platform.internal.OrionJtaPlatform]
+2020-05-06 08:46:13,915 TRACE o.h.b.r.s.i.StrategySelectorImpl [main] Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [org.hibernate.service.jta.platform.internal.OrionJtaPlatform] -> [org.hibernate.engine.transaction.jta.platform.internal.OrionJtaPlatform]
+2020-05-06 08:46:13,919 TRACE o.h.b.r.s.i.StrategySelectorImpl [main] Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [Resin] -> [org.hibernate.engine.transaction.jta.platform.internal.ResinJtaPlatform]
+2020-05-06 08:46:13,920 TRACE o.h.b.r.s.i.StrategySelectorImpl [main] Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [org.hibernate.service.jta.platform.internal.ResinJtaPlatform] -> [org.hibernate.engine.transaction.jta.platform.internal.ResinJtaPlatform]
+2020-05-06 08:46:13,924 TRACE o.h.b.r.s.i.StrategySelectorImpl [main] Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [SapNetWeaver] -> [org.hibernate.engine.transaction.jta.platform.internal.SapNetWeaverJtaPlatform]
+2020-05-06 08:46:13,924 TRACE o.h.b.r.s.i.StrategySelectorImpl [main] Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [org.hibernate.service.jta.platform.internal.SapNetWeaverJtaPlatform] -> [org.hibernate.engine.transaction.jta.platform.internal.SapNetWeaverJtaPlatform]
+2020-05-06 08:46:13,927 TRACE o.h.b.r.s.i.StrategySelectorImpl [main] Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [SunOne] -> [org.hibernate.engine.transaction.jta.platform.internal.SunOneJtaPlatform]
+2020-05-06 08:46:13,927 TRACE o.h.b.r.s.i.StrategySelectorImpl [main] Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [org.hibernate.service.jta.platform.internal.SunOneJtaPlatform] -> [org.hibernate.engine.transaction.jta.platform.internal.SunOneJtaPlatform]
+2020-05-06 08:46:13,930 TRACE o.h.b.r.s.i.StrategySelectorImpl [main] Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [Weblogic] -> [org.hibernate.engine.transaction.jta.platform.internal.WeblogicJtaPlatform]
+2020-05-06 08:46:13,930 TRACE o.h.b.r.s.i.StrategySelectorImpl [main] Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [org.hibernate.service.jta.platform.internal.WeblogicJtaPlatform] -> [org.hibernate.engine.transaction.jta.platform.internal.WeblogicJtaPlatform]
+2020-05-06 08:46:13,933 TRACE o.h.b.r.s.i.StrategySelectorImpl [main] Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [WebSphereLiberty] -> [org.hibernate.engine.transaction.jta.platform.internal.WebSphereLibertyJtaPlatform]
+2020-05-06 08:46:13,934 TRACE o.h.b.r.s.i.StrategySelectorImpl [main] Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [org.hibernate.engine.transaction.jta.platform.internal.WebSphereLibertyJtaPlatform] -> [org.hibernate.engine.transaction.jta.platform.internal.WebSphereLibertyJtaPlatform]
+2020-05-06 08:46:13,937 TRACE o.h.b.r.s.i.StrategySelectorImpl [main] Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [WebSphere] -> [org.hibernate.engine.transaction.jta.platform.internal.WebSphereJtaPlatform]
+2020-05-06 08:46:13,937 TRACE o.h.b.r.s.i.StrategySelectorImpl [main] Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [org.hibernate.service.jta.platform.internal.WebSphereJtaPlatform] -> [org.hibernate.engine.transaction.jta.platform.internal.WebSphereJtaPlatform]
+2020-05-06 08:46:13,940 TRACE o.h.b.r.s.i.StrategySelectorImpl [main] Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [WebSphereExtended] -> [org.hibernate.engine.transaction.jta.platform.internal.WebSphereExtendedJtaPlatform]
+2020-05-06 08:46:13,940 TRACE o.h.b.r.s.i.StrategySelectorImpl [main] Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [org.hibernate.service.jta.platform.internal.WebSphereExtendedJtaPlatform] -> [org.hibernate.engine.transaction.jta.platform.internal.WebSphereExtendedJtaPlatform]
+2020-05-06 08:46:13,946 TRACE o.h.b.r.s.i.StrategySelectorImpl [main] Registering named strategy selector [org.hibernate.resource.transaction.spi.TransactionCoordinatorBuilder] : [jdbc] -> [org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorBuilderImpl]
+2020-05-06 08:46:13,949 TRACE o.h.b.r.s.i.StrategySelectorImpl [main] Registering named strategy selector [org.hibernate.resource.transaction.spi.TransactionCoordinatorBuilder] : [jta] -> [org.hibernate.resource.transaction.backend.jta.internal.JtaTransactionCoordinatorBuilderImpl]
+2020-05-06 08:46:13,949 TRACE o.h.b.r.s.i.StrategySelectorImpl [main] Registering named strategy selector [org.hibernate.resource.transaction.spi.TransactionCoordinatorBuilder] : [org.hibernate.transaction.JDBCTransactionFactory] -> [org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorBuilderImpl]
+2020-05-06 08:46:13,950 TRACE o.h.b.r.s.i.StrategySelectorImpl [main] Registering named strategy selector [org.hibernate.resource.transaction.spi.TransactionCoordinatorBuilder] : [org.hibernate.transaction.JTATransactionFactory] -> [org.hibernate.resource.transaction.backend.jta.internal.JtaTransactionCoordinatorBuilderImpl]
+2020-05-06 08:46:13,950 TRACE o.h.b.r.s.i.StrategySelectorImpl [main] Registering named strategy selector [org.hibernate.resource.transaction.spi.TransactionCoordinatorBuilder] : [org.hibernate.transaction.CMTTransactionFactory] -> [org.hibernate.resource.transaction.backend.jta.internal.JtaTransactionCoordinatorBuilderImpl]
+2020-05-06 08:46:13,958 TRACE o.h.b.r.s.i.StrategySelectorImpl [main] Registering named strategy selector [org.hibernate.hql.spi.id.MultiTableBulkIdStrategy] : [persistent] -> [org.hibernate.hql.spi.id.persistent.PersistentTableBulkIdStrategy]
+2020-05-06 08:46:13,961 TRACE o.h.b.r.s.i.StrategySelectorImpl [main] Registering named strategy selector [org.hibernate.hql.spi.id.MultiTableBulkIdStrategy] : [global_temporary] -> [org.hibernate.hql.spi.id.global.GlobalTemporaryTableBulkIdStrategy]
+2020-05-06 08:46:13,964 TRACE o.h.b.r.s.i.StrategySelectorImpl [main] Registering named strategy selector [org.hibernate.hql.spi.id.MultiTableBulkIdStrategy] : [local_temporary] -> [org.hibernate.hql.spi.id.local.LocalTemporaryTableBulkIdStrategy]
+2020-05-06 08:46:13,970 TRACE o.h.b.r.s.i.StrategySelectorImpl [main] Registering named strategy selector [org.hibernate.boot.model.naming.ImplicitNamingStrategy] : [default] -> [org.hibernate.boot.model.naming.ImplicitNamingStrategyJpaCompliantImpl]
+2020-05-06 08:46:13,970 TRACE o.h.b.r.s.i.StrategySelectorImpl [main] Registering named strategy selector [org.hibernate.boot.model.naming.ImplicitNamingStrategy] : [jpa] -> [org.hibernate.boot.model.naming.ImplicitNamingStrategyJpaCompliantImpl]
+2020-05-06 08:46:13,973 TRACE o.h.b.r.s.i.StrategySelectorImpl [main] Registering named strategy selector [org.hibernate.boot.model.naming.ImplicitNamingStrategy] : [legacy-jpa] -> [org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl]
+2020-05-06 08:46:13,976 TRACE o.h.b.r.s.i.StrategySelectorImpl [main] Registering named strategy selector [org.hibernate.boot.model.naming.ImplicitNamingStrategy] : [legacy-hbm] -> [org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyHbmImpl]
+2020-05-06 08:46:13,980 TRACE o.h.b.r.s.i.StrategySelectorImpl [main] Registering named strategy selector [org.hibernate.boot.model.naming.ImplicitNamingStrategy] : [component-path] -> [org.hibernate.boot.model.naming.ImplicitNamingStrategyComponentPathImpl]
+2020-05-06 08:46:13,985 TRACE o.h.b.r.s.i.StrategySelectorImpl [main] Registering named strategy selector [org.hibernate.cache.spi.CacheKeysFactory] : [default] -> [org.hibernate.cache.internal.DefaultCacheKeysFactory]
+2020-05-06 08:46:13,988 TRACE o.h.b.r.s.i.StrategySelectorImpl [main] Registering named strategy selector [org.hibernate.cache.spi.CacheKeysFactory] : [simple] -> [org.hibernate.cache.internal.SimpleCacheKeysFactory]
+2020-05-06 08:46:14,271 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-05-06 08:46:14,282 DEBUG o.h.c.Environment [main] HHH000206: hibernate.properties not found
+2020-05-06 08:46:15,218 DEBUG o.h.j.b.i.EntityManagerFactoryBuilderImpl [main] Removed merged setting [javax.persistence.jdbc.driver] due to normalization
+2020-05-06 08:46:15,219 DEBUG o.h.j.b.i.EntityManagerFactoryBuilderImpl [main] Removed merged setting [javax.persistence.jdbc.url] due to normalization
+2020-05-06 08:46:15,260 DEBUG o.h.s.s.ServiceBinding [main] Overriding existing service binding [org.hibernate.secure.spi.JaccService]
+2020-05-06 08:46:15,333 TRACE o.h.s.i.AbstractServiceRegistryImpl [main] Initializing service [role=org.hibernate.engine.config.spi.ConfigurationService]
+2020-05-06 08:46:15,413 TRACE o.h.s.i.AbstractServiceRegistryImpl [main] Initializing service [role=org.hibernate.cache.spi.RegionFactory]
+2020-05-06 08:46:15,419 DEBUG o.h.c.i.RegionFactoryInitiator [main] Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+2020-05-06 08:46:15,428 DEBUG o.h.c.i.RegionFactoryInitiator [main] Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+2020-05-06 08:46:15,606 INFO o.h.a.c.Version [main] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-05-06 08:46:15,945 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration boolean -> org.hibernate.type.BooleanType@374c40ba
+2020-05-06 08:46:15,945 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration boolean -> org.hibernate.type.BooleanType@374c40ba
+2020-05-06 08:46:15,946 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@374c40ba
+2020-05-06 08:46:15,949 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@f882465
+2020-05-06 08:46:15,952 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration true_false -> org.hibernate.type.TrueFalseType@79ecc507
+2020-05-06 08:46:15,955 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration yes_no -> org.hibernate.type.YesNoType@41def031
+2020-05-06 08:46:15,961 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration byte -> org.hibernate.type.ByteType@590d6c76
+2020-05-06 08:46:15,961 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration byte -> org.hibernate.type.ByteType@590d6c76
+2020-05-06 08:46:15,961 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@590d6c76
+2020-05-06 08:46:15,967 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration character -> org.hibernate.type.CharacterType@1b52699c
+2020-05-06 08:46:15,967 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration char -> org.hibernate.type.CharacterType@1b52699c
+2020-05-06 08:46:15,968 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@1b52699c
+2020-05-06 08:46:15,974 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration short -> org.hibernate.type.ShortType@34045582
+2020-05-06 08:46:15,974 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration short -> org.hibernate.type.ShortType@34045582
+2020-05-06 08:46:15,974 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration java.lang.Short -> org.hibernate.type.ShortType@34045582
+2020-05-06 08:46:15,982 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration integer -> org.hibernate.type.IntegerType@40df6090
+2020-05-06 08:46:15,982 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration int -> org.hibernate.type.IntegerType@40df6090
+2020-05-06 08:46:15,982 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@40df6090
+2020-05-06 08:46:15,988 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration long -> org.hibernate.type.LongType@1c98b4eb
+2020-05-06 08:46:15,989 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration long -> org.hibernate.type.LongType@1c98b4eb
+2020-05-06 08:46:15,989 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration java.lang.Long -> org.hibernate.type.LongType@1c98b4eb
+2020-05-06 08:46:15,994 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration float -> org.hibernate.type.FloatType@340cb97f
+2020-05-06 08:46:15,995 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration float -> org.hibernate.type.FloatType@340cb97f
+2020-05-06 08:46:15,995 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration java.lang.Float -> org.hibernate.type.FloatType@340cb97f
+2020-05-06 08:46:16,000 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration double -> org.hibernate.type.DoubleType@7a04f730
+2020-05-06 08:46:16,001 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration double -> org.hibernate.type.DoubleType@7a04f730
+2020-05-06 08:46:16,001 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@7a04f730
+2020-05-06 08:46:16,006 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@349c4d1c
+2020-05-06 08:46:16,007 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@349c4d1c
+2020-05-06 08:46:16,013 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration big_integer -> org.hibernate.type.BigIntegerType@31aab981
+2020-05-06 08:46:16,013 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@31aab981
+2020-05-06 08:46:16,019 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration string -> org.hibernate.type.StringType@5b0dbfb
+2020-05-06 08:46:16,019 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration java.lang.String -> org.hibernate.type.StringType@5b0dbfb
+2020-05-06 08:46:16,022 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration nstring -> org.hibernate.type.StringNVarcharType@15d114ce
+2020-05-06 08:46:16,026 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@6b27b2d0
+2020-05-06 08:46:16,031 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration url -> org.hibernate.type.UrlType@62b6c045
+2020-05-06 08:46:16,032 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration java.net.URL -> org.hibernate.type.UrlType@62b6c045
+2020-05-06 08:46:16,037 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration Duration -> org.hibernate.type.DurationType@370c9018
+2020-05-06 08:46:16,038 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration java.time.Duration -> org.hibernate.type.DurationType@370c9018
+2020-05-06 08:46:16,048 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration Instant -> org.hibernate.type.InstantType@482c351d
+2020-05-06 08:46:16,048 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration java.time.Instant -> org.hibernate.type.InstantType@482c351d
+2020-05-06 08:46:16,054 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration LocalDateTime -> org.hibernate.type.LocalDateTimeType@7ddcb0dc
+2020-05-06 08:46:16,054 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration java.time.LocalDateTime -> org.hibernate.type.LocalDateTimeType@7ddcb0dc
+2020-05-06 08:46:16,061 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration LocalDate -> org.hibernate.type.LocalDateType@355ce6a6
+2020-05-06 08:46:16,061 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration java.time.LocalDate -> org.hibernate.type.LocalDateType@355ce6a6
+2020-05-06 08:46:16,067 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration LocalTime -> org.hibernate.type.LocalTimeType@233f52f8
+2020-05-06 08:46:16,068 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration java.time.LocalTime -> org.hibernate.type.LocalTimeType@233f52f8
+2020-05-06 08:46:16,074 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@6bce313
+2020-05-06 08:46:16,074 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration java.time.OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@6bce313
+2020-05-06 08:46:16,081 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration OffsetTime -> org.hibernate.type.OffsetTimeType@15e8f9b2
+2020-05-06 08:46:16,081 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration java.time.OffsetTime -> org.hibernate.type.OffsetTimeType@15e8f9b2
+2020-05-06 08:46:16,088 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@5a48da4f
+2020-05-06 08:46:16,091 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration java.time.ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@5a48da4f
+2020-05-06 08:46:16,099 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration date -> org.hibernate.type.DateType@3a11c0eb
+2020-05-06 08:46:16,100 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration java.sql.Date -> org.hibernate.type.DateType@3a11c0eb
+2020-05-06 08:46:16,106 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration time -> org.hibernate.type.TimeType@3e4d40ea
+2020-05-06 08:46:16,106 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration java.sql.Time -> org.hibernate.type.TimeType@3e4d40ea
+2020-05-06 08:46:16,112 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration timestamp -> org.hibernate.type.TimestampType@5b1c32e4
+2020-05-06 08:46:16,112 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@5b1c32e4
+2020-05-06 08:46:16,112 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration java.util.Date -> org.hibernate.type.TimestampType@5b1c32e4
+2020-05-06 08:46:16,121 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@24fba488
+2020-05-06 08:46:16,127 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration calendar -> org.hibernate.type.CalendarType@51ba952e
+2020-05-06 08:46:16,127 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@51ba952e
+2020-05-06 08:46:16,127 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@51ba952e
+2020-05-06 08:46:16,130 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@9e02f84
+2020-05-06 08:46:16,136 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration calendar_time -> org.hibernate.type.CalendarTimeType@570a62a5
+2020-05-06 08:46:16,141 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration locale -> org.hibernate.type.LocaleType@29d25e65
+2020-05-06 08:46:16,141 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@29d25e65
+2020-05-06 08:46:16,147 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration currency -> org.hibernate.type.CurrencyType@1a1f79ce
+2020-05-06 08:46:16,147 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@1a1f79ce
+2020-05-06 08:46:16,153 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration timezone -> org.hibernate.type.TimeZoneType@601d6622
+2020-05-06 08:46:16,153 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@601d6622
+2020-05-06 08:46:16,159 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration class -> org.hibernate.type.ClassType@391d1e33
+2020-05-06 08:46:16,159 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration java.lang.Class -> org.hibernate.type.ClassType@391d1e33
+2020-05-06 08:46:16,164 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@3fde2209
+2020-05-06 08:46:16,165 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@3fde2209
+2020-05-06 08:46:16,168 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@75882261
+2020-05-06 08:46:16,174 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration binary -> org.hibernate.type.BinaryType@7c70aae1
+2020-05-06 08:46:16,174 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration byte[] -> org.hibernate.type.BinaryType@7c70aae1
+2020-05-06 08:46:16,174 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration [B -> org.hibernate.type.BinaryType@7c70aae1
+2020-05-06 08:46:16,180 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@7c588adc
+2020-05-06 08:46:16,180 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@7c588adc
+2020-05-06 08:46:16,180 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@7c588adc
+2020-05-06 08:46:16,187 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration row_version -> org.hibernate.type.RowVersionType@492521c4
+2020-05-06 08:46:16,191 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration image -> org.hibernate.type.ImageType@15605d83
+2020-05-06 08:46:16,198 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration characters -> org.hibernate.type.CharArrayType@1bd8afc8
+2020-05-06 08:46:16,199 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration char[] -> org.hibernate.type.CharArrayType@1bd8afc8
+2020-05-06 08:46:16,199 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration [C -> org.hibernate.type.CharArrayType@1bd8afc8
+2020-05-06 08:46:16,206 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@543fe698
+2020-05-06 08:46:16,206 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@543fe698
+2020-05-06 08:46:16,207 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@543fe698
+2020-05-06 08:46:16,211 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration text -> org.hibernate.type.TextType@76396509
+2020-05-06 08:46:16,215 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration ntext -> org.hibernate.type.NTextType@7b96de8d
+2020-05-06 08:46:16,224 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration blob -> org.hibernate.type.BlobType@6d0e45a5
+2020-05-06 08:46:16,225 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@6d0e45a5
+2020-05-06 08:46:16,228 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@615db358
+2020-05-06 08:46:16,237 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration clob -> org.hibernate.type.ClobType@496cc217
+2020-05-06 08:46:16,237 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@496cc217
+2020-05-06 08:46:16,246 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration nclob -> org.hibernate.type.NClobType@437ed416
+2020-05-06 08:46:16,246 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@437ed416
+2020-05-06 08:46:16,249 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@5cfed0ba
+2020-05-06 08:46:16,252 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@26f0141
+2020-05-06 08:46:16,260 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration serializable -> org.hibernate.type.SerializableType@8b13d91
+2020-05-06 08:46:16,280 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration object -> org.hibernate.type.ObjectType@2f2e4bde
+2020-05-06 08:46:16,281 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@2f2e4bde
+2020-05-06 08:46:16,284 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@508ad266
+2020-05-06 08:46:16,284 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@2313db84
+2020-05-06 08:46:16,284 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@216372b7
+2020-05-06 08:46:16,284 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@14b4340c
+2020-05-06 08:46:16,285 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@12abcd1e
+2020-05-06 08:46:16,285 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@2fd9fb34
+2020-05-06 08:46:16,285 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@1595d2b2
+2020-05-06 08:46:16,285 DEBUG o.h.t.BasicTypeRegistry [main] Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@20349058
+2020-05-06 08:46:16,388 TRACE o.h.s.i.AbstractServiceRegistryImpl [main] Initializing service [role=org.hibernate.boot.cfgxml.spi.CfgXmlAccessService]
+2020-05-06 08:46:16,415 DEBUG o.h.b.i.BootstrapContextImpl [main] Injecting JPA temp ClassLoader [org.apache.openejb.core.TempClassLoader@4837f97e] into BootstrapContext; was [null]
+2020-05-06 08:46:16,416 DEBUG o.h.b.i.ClassLoaderAccessImpl [main] ClassLoaderAccessImpl#injectTempClassLoader(org.apache.openejb.core.TempClassLoader@4837f97e) [was null]
+2020-05-06 08:46:16,420 DEBUG o.h.b.i.BootstrapContextImpl [main] Injecting ScanEnvironment [org.hibernate.jpa.boot.internal.StandardJpaScanEnvironmentImpl@5e905f2c] into BootstrapContext; was [null]
+2020-05-06 08:46:16,421 DEBUG o.h.b.i.BootstrapContextImpl [main] Injecting ScanOptions [org.hibernate.boot.archive.scan.internal.StandardScanOptions@fddd7ae] into BootstrapContext; was [org.hibernate.boot.archive.scan.internal.StandardScanOptions@3f6cce7f]
+2020-05-06 08:46:16,850 DEBUG o.h.b.i.BootstrapContextImpl [main] Injecting JPA temp ClassLoader [null] into BootstrapContext; was [org.apache.openejb.core.TempClassLoader@4837f97e]
+2020-05-06 08:46:16,850 DEBUG o.h.b.i.ClassLoaderAccessImpl [main] ClassLoaderAccessImpl#injectTempClassLoader(null) [was org.apache.openejb.core.TempClassLoader@4837f97e]
+2020-05-06 08:46:16,913 TRACE o.h.s.i.AbstractServiceRegistryImpl [main] Initializing service [role=org.hibernate.id.factory.spi.MutableIdentifierGeneratorFactory]
+2020-05-06 08:46:16,930 DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory [main] Registering IdentifierGenerator strategy [uuid2] -> [org.hibernate.id.UUIDGenerator]
+2020-05-06 08:46:16,933 DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory [main] Registering IdentifierGenerator strategy [guid] -> [org.hibernate.id.GUIDGenerator]
+2020-05-06 08:46:16,939 DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory [main] Registering IdentifierGenerator strategy [uuid] -> [org.hibernate.id.UUIDHexGenerator]
+2020-05-06 08:46:16,939 DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory [main] Registering IdentifierGenerator strategy [uuid.hex] -> [org.hibernate.id.UUIDHexGenerator]
+2020-05-06 08:46:16,942 DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory [main] Registering IdentifierGenerator strategy [assigned] -> [org.hibernate.id.Assigned]
+2020-05-06 08:46:16,952 DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory [main] Registering IdentifierGenerator strategy [identity] -> [org.hibernate.id.IdentityGenerator]
+2020-05-06 08:46:16,955 DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory [main] Registering IdentifierGenerator strategy [select] -> [org.hibernate.id.SelectGenerator]
+2020-05-06 08:46:16,963 DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory [main] Registering IdentifierGenerator strategy [sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+2020-05-06 08:46:16,970 DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory [main] Registering IdentifierGenerator strategy [seqhilo] -> [org.hibernate.id.SequenceHiLoGenerator]
+2020-05-06 08:46:16,973 DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory [main] Registering IdentifierGenerator strategy [increment] -> [org.hibernate.id.IncrementGenerator]
+2020-05-06 08:46:16,977 DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory [main] Registering IdentifierGenerator strategy [foreign] -> [org.hibernate.id.ForeignGenerator]
+2020-05-06 08:46:16,980 DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory [main] Registering IdentifierGenerator strategy [sequence-identity] -> [org.hibernate.id.SequenceIdentityGenerator]
+2020-05-06 08:46:16,981 DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory [main] Registering IdentifierGenerator strategy [enhanced-sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+2020-05-06 08:46:16,984 DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory [main] Registering IdentifierGenerator strategy [enhanced-table] -> [org.hibernate.id.enhanced.TableGenerator]
+2020-05-06 08:46:16,985 TRACE o.h.s.i.AbstractServiceRegistryImpl [main] Initializing service [role=org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+2020-05-06 08:46:16,985 TRACE o.h.s.i.AbstractServiceRegistryImpl [main] Initializing service [role=org.hibernate.engine.jdbc.dialect.spi.DialectFactory]
+2020-05-06 08:46:16,988 TRACE o.h.s.i.AbstractServiceRegistryImpl [main] Initializing service [role=org.hibernate.engine.jdbc.dialect.spi.DialectResolver]
+2020-05-06 08:46:17,004 TRACE o.h.s.i.AbstractServiceRegistryImpl [main] Initializing service [role=org.hibernate.engine.jdbc.connections.spi.ConnectionProvider]
+2020-05-06 08:46:17,009 TRACE o.h.s.i.AbstractServiceRegistryImpl [main] Initializing service [role=org.hibernate.engine.jndi.spi.JndiService]
+2020-05-06 08:46:17,049 DEBUG o.h.e.j.e.i.JdbcEnvironmentInitiator [main] Database ->
+       name : HSQL Database Engine
+    version : 2.3.2
+      major : 2
+      minor : 3
+2020-05-06 08:46:17,049 DEBUG o.h.e.j.e.i.JdbcEnvironmentInitiator [main] Driver ->
+       name : HSQL Database Engine Driver
+    version : 2.3.2
+      major : 2
+      minor : 3
+2020-05-06 08:46:17,049 DEBUG o.h.e.j.e.i.JdbcEnvironmentInitiator [main] JDBC version : 4.0
+2020-05-06 08:46:17,264 INFO o.h.d.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+2020-05-06 08:46:17,427 DEBUG o.h.e.j.e.s.IdentifierHelperBuilder [main] JDBC driver metadata reported database stores quoted identifiers in neither upper, lower nor mixed case
+2020-05-06 08:46:17,508 TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl [main] Normalizing identifier quoting [PUBLIC]
+2020-05-06 08:46:17,508 TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl [main] Normalizing identifier quoting [SYSTEM_LOBS]
+2020-05-06 08:46:17,508 TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl [main] Normalizing identifier quoting [LOB_ID]
+2020-05-06 08:46:17,518 TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl [main] Normalizing identifier quoting [PUBLIC]
+2020-05-06 08:46:17,518 TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl [main] Normalizing identifier quoting [PUBLIC]
+2020-05-06 08:46:17,547 TRACE o.h.s.i.AbstractServiceRegistryImpl [main] Initializing service [role=org.hibernate.engine.jdbc.spi.JdbcServices]
+2020-05-06 08:46:17,570 DEBUG o.h.b.m.r.Namespace [main] Created database namespace [logicalName=Name{catalog=null, schema=null}, physicalName=Name{catalog=null, schema=null}]
+2020-05-06 08:46:17,594 DEBUG o.h.t.s.TypeConfiguration$Scope [main] Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@26d0ece6] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@100bba26]
+2020-05-06 08:46:17,956 DEBUG o.h.c.AnnotationBinder [main] Binding entity from annotated class: be.pxl.student.entity.Account
+2020-05-06 08:46:18,199 TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl [main] Normalizing identifier quoting [DTYPE]
+2020-05-06 08:46:18,200 DEBUG o.h.c.Ejb3Column [main] Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+2020-05-06 08:46:18,264 DEBUG o.h.c.a.EntityBinder [main] Import with entity name Account
+2020-05-06 08:46:18,264 TRACE o.h.b.i.InFlightMetadataCollectorImpl [main] Import: Account -> be.pxl.student.entity.Account
+2020-05-06 08:46:18,264 TRACE o.h.b.i.InFlightMetadataCollectorImpl [main] Import: be.pxl.student.entity.Account -> be.pxl.student.entity.Account
+2020-05-06 08:46:18,284 TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl [main] Normalizing identifier quoting [Account]
+2020-05-06 08:46:18,304 TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl [main] Normalizing identifier quoting [Account]
+2020-05-06 08:46:18,313 DEBUG o.h.c.a.EntityBinder [main] Bind entity be.pxl.student.entity.Account on table Account
+2020-05-06 08:46:18,415 TRACE o.h.c.AnnotationBinder [main] Processing annotations of be.pxl.student.entity.Account.IBAN
+2020-05-06 08:46:18,471 TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl [main] Normalizing identifier quoting [IBAN]
+2020-05-06 08:46:18,471 TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl [main] Normalizing identifier quoting [IBAN]
+2020-05-06 08:46:18,471 DEBUG o.h.c.Ejb3Column [main] Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Account), mappingColumn=IBAN, insertable=true, updatable=true, unique=false}
+2020-05-06 08:46:18,490 DEBUG o.h.c.a.PropertyBinder [main] MetadataSourceProcessor property IBAN with lazy=false
+2020-05-06 08:46:18,501 DEBUG o.h.c.AbstractPropertyHolder [main] Attempting to locate auto-apply AttributeConverter for property [be.pxl.student.entity.Account:IBAN]
+2020-05-06 08:46:18,517 DEBUG o.h.c.a.SimpleValueBinder [main] building SimpleValue for IBAN
+2020-05-06 08:46:18,530 TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl [main] Normalizing identifier quoting [IBAN]
+2020-05-06 08:46:18,530 TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl [main] Normalizing identifier quoting [IBAN]
+2020-05-06 08:46:18,531 TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl [main] Normalizing identifier quoting [IBAN]
+2020-05-06 08:46:18,534 DEBUG o.h.c.a.PropertyBinder [main] Building property IBAN
+2020-05-06 08:46:18,556 TRACE o.h.c.a.PropertyBinder [main] Cascading IBAN with null
+2020-05-06 08:46:18,557 DEBUG o.h.c.BinderHelper [main] #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(IBAN)]), IBAN, assigned, , ...)
+2020-05-06 08:46:18,558 TRACE o.h.c.AnnotationBinder [main] Bind @Id on IBAN
+2020-05-06 08:46:18,560 TRACE o.h.c.AnnotationBinder [main] Processing annotations of be.pxl.student.entity.Account.name
+2020-05-06 08:46:18,561 TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl [main] Normalizing identifier quoting [name]
+2020-05-06 08:46:18,561 TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl [main] Normalizing identifier quoting [name]
+2020-05-06 08:46:18,561 DEBUG o.h.c.Ejb3Column [main] Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Account), mappingColumn=name, insertable=true, updatable=true, unique=false}
+2020-05-06 08:46:18,561 DEBUG o.h.c.a.PropertyBinder [main] MetadataSourceProcessor property name with lazy=false
+2020-05-06 08:46:18,561 DEBUG o.h.c.AbstractPropertyHolder [main] Attempting to locate auto-apply AttributeConverter for property [be.pxl.student.entity.Account:name]
+2020-05-06 08:46:18,561 DEBUG o.h.c.a.SimpleValueBinder [main] building SimpleValue for name
+2020-05-06 08:46:18,561 TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl [main] Normalizing identifier quoting [name]
+2020-05-06 08:46:18,561 TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl [main] Normalizing identifier quoting [name]
+2020-05-06 08:46:18,561 TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl [main] Normalizing identifier quoting [name]
+2020-05-06 08:46:18,562 DEBUG o.h.c.a.PropertyBinder [main] Building property name
+2020-05-06 08:46:18,562 TRACE o.h.c.a.PropertyBinder [main] Cascading name with null
+2020-05-06 08:46:18,562 TRACE o.h.c.AnnotationBinder [main] Processing annotations of be.pxl.student.entity.Account.payments
+2020-05-06 08:46:18,569 DEBUG o.h.c.Ejb3Column [main] Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='account'}
+2020-05-06 08:46:18,570 TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl [main] Normalizing identifier quoting [payments]
+2020-05-06 08:46:18,570 TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl [main] Normalizing identifier quoting [payments]
+2020-05-06 08:46:18,570 DEBUG o.h.c.Ejb3Column [main] Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Account), mappingColumn=payments, insertable=true, updatable=true, unique=false}
+2020-05-06 08:46:18,580 DEBUG o.h.c.Ejb3Column [main] Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Account), mappingColumn=null, insertable=true, updatable=true, unique=false}
+2020-05-06 08:46:18,654 TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl [main] Normalizing identifier quoting [element]
+2020-05-06 08:46:18,654 TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl [main] Normalizing identifier quoting [element]
+2020-05-06 08:46:18,654 DEBUG o.h.c.Ejb3Column [main] Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Account), mappingColumn=element, insertable=true, updatable=true, unique=false}
+2020-05-06 08:46:18,655 TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl [main] Normalizing identifier quoting [payments_KEY]
+2020-05-06 08:46:18,656 DEBUG o.h.c.Ejb3Column [main] Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Account), mappingColumn=payments_KEY, insertable=true, updatable=true, unique=false}
+2020-05-06 08:46:18,657 TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl [main] Normalizing identifier quoting [payments_KEY]
+2020-05-06 08:46:18,657 DEBUG o.h.c.Ejb3Column [main] Binding column: Ejb3JoinColumn{logicalColumnName='payments_KEY', referencedColumn='null', mappedBy='null'}
+2020-05-06 08:46:18,664 DEBUG o.h.c.Ejb3Column [main] Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='account'}
+2020-05-06 08:46:18,664 DEBUG o.h.c.Ejb3Column [main] Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='account'}
+2020-05-06 08:46:18,664 DEBUG o.h.c.a.CollectionBinder [main] Collection role: be.pxl.student.entity.Account.payments
+2020-05-06 08:46:18,701 DEBUG o.h.c.a.PropertyBinder [main] Building property payments
+2020-05-06 08:46:18,701 TRACE o.h.c.a.PropertyBinder [main] Cascading payments with persist
+2020-05-06 08:46:18,707 DEBUG o.h.c.AnnotationBinder [main] Binding entity from annotated class: be.pxl.student.entity.Payment
+2020-05-06 08:46:18,707 TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl [main] Normalizing identifier quoting [DTYPE]
+2020-05-06 08:46:18,707 DEBUG o.h.c.Ejb3Column [main] Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+2020-05-06 08:46:18,707 DEBUG o.h.c.a.EntityBinder [main] Import with entity name Payment
+2020-05-06 08:46:18,708 TRACE o.h.b.i.InFlightMetadataCollectorImpl [main] Import: Payment -> be.pxl.student.entity.Payment
+2020-05-06 08:46:18,708 TRACE o.h.b.i.InFlightMetadataCollectorImpl [main] Import: be.pxl.student.entity.Payment -> be.pxl.student.entity.Payment
+2020-05-06 08:46:18,708 TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl [main] Normalizing identifier quoting [Payment]
+2020-05-06 08:46:18,708 TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl [main] Normalizing identifier quoting [Payment]
+2020-05-06 08:46:18,708 DEBUG o.h.c.a.EntityBinder [main] Bind entity be.pxl.student.entity.Payment on table Payment
+2020-05-06 08:46:18,712 TRACE o.h.c.AnnotationBinder [main] Processing annotations of be.pxl.student.entity.Payment.Id
+2020-05-06 08:46:18,712 TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl [main] Normalizing identifier quoting [Id]
+2020-05-06 08:46:18,712 TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl [main] Normalizing identifier quoting [Id]
+2020-05-06 08:46:18,712 DEBUG o.h.c.Ejb3Column [main] Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Payment), mappingColumn=Id, insertable=true, updatable=true, unique=false}
+2020-05-06 08:46:18,712 DEBUG o.h.c.a.PropertyBinder [main] MetadataSourceProcessor property Id with lazy=false
+2020-05-06 08:46:18,712 DEBUG o.h.c.AbstractPropertyHolder [main] Attempting to locate auto-apply AttributeConverter for property [be.pxl.student.entity.Payment:Id]
+2020-05-06 08:46:18,713 DEBUG o.h.c.a.SimpleValueBinder [main] building SimpleValue for Id
+2020-05-06 08:46:18,713 TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl [main] Normalizing identifier quoting [Id]
+2020-05-06 08:46:18,713 TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl [main] Normalizing identifier quoting [Id]
+2020-05-06 08:46:18,713 TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl [main] Normalizing identifier quoting [Id]
+2020-05-06 08:46:18,713 DEBUG o.h.c.a.PropertyBinder [main] Building property Id
+2020-05-06 08:46:18,713 TRACE o.h.c.a.PropertyBinder [main] Cascading Id with null
+2020-05-06 08:46:18,719 DEBUG o.h.c.BinderHelper [main] #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(Id)]), Id, identity, , ...)
+2020-05-06 08:46:18,719 TRACE o.h.c.AnnotationBinder [main] Bind @Id on Id
+2020-05-06 08:46:18,719 TRACE o.h.c.AnnotationBinder [main] Processing annotations of be.pxl.student.entity.Payment.account
+2020-05-06 08:46:18,719 DEBUG o.h.c.Ejb3Column [main] Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='null'}
+2020-05-06 08:46:18,719 TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl [main] Normalizing identifier quoting [account]
+2020-05-06 08:46:18,719 TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl [main] Normalizing identifier quoting [account]
+2020-05-06 08:46:18,719 DEBUG o.h.c.Ejb3Column [main] Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Payment), mappingColumn=account, insertable=true, updatable=true, unique=false}
+2020-05-06 08:46:18,728 DEBUG o.h.c.a.PropertyBinder [main] Building property account
+2020-05-06 08:46:18,728 TRACE o.h.c.a.PropertyBinder [main] Cascading account with none
+2020-05-06 08:46:18,728 TRACE o.h.c.AnnotationBinder [main] Processing annotations of be.pxl.student.entity.Payment.amount
+2020-05-06 08:46:18,729 TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl [main] Normalizing identifier quoting [amount]
+2020-05-06 08:46:18,729 TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl [main] Normalizing identifier quoting [amount]
+2020-05-06 08:46:18,729 DEBUG o.h.c.Ejb3Column [main] Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Payment), mappingColumn=amount, insertable=true, updatable=true, unique=false}
+2020-05-06 08:46:18,729 DEBUG o.h.c.a.PropertyBinder [main] MetadataSourceProcessor property amount with lazy=false
+2020-05-06 08:46:18,729 DEBUG o.h.c.AbstractPropertyHolder [main] Attempting to locate auto-apply AttributeConverter for property [be.pxl.student.entity.Payment:amount]
+2020-05-06 08:46:18,729 DEBUG o.h.c.a.SimpleValueBinder [main] building SimpleValue for amount
+2020-05-06 08:46:18,729 TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl [main] Normalizing identifier quoting [amount]
+2020-05-06 08:46:18,729 TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl [main] Normalizing identifier quoting [amount]
+2020-05-06 08:46:18,729 TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl [main] Normalizing identifier quoting [amount]
+2020-05-06 08:46:18,729 DEBUG o.h.c.a.PropertyBinder [main] Building property amount
+2020-05-06 08:46:18,729 TRACE o.h.c.a.PropertyBinder [main] Cascading amount with null
+2020-05-06 08:46:18,729 TRACE o.h.c.AnnotationBinder [main] Processing annotations of be.pxl.student.entity.Payment.currency
+2020-05-06 08:46:18,730 TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl [main] Normalizing identifier quoting [currency]
+2020-05-06 08:46:18,730 TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl [main] Normalizing identifier quoting [currency]
+2020-05-06 08:46:18,730 DEBUG o.h.c.Ejb3Column [main] Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Payment), mappingColumn=currency, insertable=true, updatable=true, unique=false}
+2020-05-06 08:46:18,730 DEBUG o.h.c.a.PropertyBinder [main] MetadataSourceProcessor property currency with lazy=false
+2020-05-06 08:46:18,730 DEBUG o.h.c.AbstractPropertyHolder [main] Attempting to locate auto-apply AttributeConverter for property [be.pxl.student.entity.Payment:currency]
+2020-05-06 08:46:18,730 DEBUG o.h.c.a.SimpleValueBinder [main] building SimpleValue for currency
+2020-05-06 08:46:18,730 TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl [main] Normalizing identifier quoting [currency]
+2020-05-06 08:46:18,730 TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl [main] Normalizing identifier quoting [currency]
+2020-05-06 08:46:18,730 TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl [main] Normalizing identifier quoting [currency]
+2020-05-06 08:46:18,731 DEBUG o.h.c.a.PropertyBinder [main] Building property currency
+2020-05-06 08:46:18,731 TRACE o.h.c.a.PropertyBinder [main] Cascading currency with null
+2020-05-06 08:46:18,731 TRACE o.h.c.AnnotationBinder [main] Processing annotations of be.pxl.student.entity.Payment.date
+2020-05-06 08:46:18,731 TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl [main] Normalizing identifier quoting [date]
+2020-05-06 08:46:18,731 TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl [main] Normalizing identifier quoting [date]
+2020-05-06 08:46:18,731 DEBUG o.h.c.Ejb3Column [main] Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Payment), mappingColumn=date, insertable=true, updatable=true, unique=false}
+2020-05-06 08:46:18,731 DEBUG o.h.c.a.PropertyBinder [main] MetadataSourceProcessor property date with lazy=false
+2020-05-06 08:46:18,731 DEBUG o.h.c.AbstractPropertyHolder [main] Attempting to locate auto-apply AttributeConverter for property [be.pxl.student.entity.Payment:date]
+2020-05-06 08:46:18,731 DEBUG o.h.c.a.SimpleValueBinder [main] building SimpleValue for date
+2020-05-06 08:46:18,732 TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl [main] Normalizing identifier quoting [date]
+2020-05-06 08:46:18,732 TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl [main] Normalizing identifier quoting [date]
+2020-05-06 08:46:18,732 TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl [main] Normalizing identifier quoting [date]
+2020-05-06 08:46:18,732 DEBUG o.h.c.a.PropertyBinder [main] Building property date
+2020-05-06 08:46:18,732 TRACE o.h.c.a.PropertyBinder [main] Cascading date with null
+2020-05-06 08:46:18,732 TRACE o.h.c.AnnotationBinder [main] Processing annotations of be.pxl.student.entity.Payment.detail
+2020-05-06 08:46:18,732 TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl [main] Normalizing identifier quoting [detail]
+2020-05-06 08:46:18,732 TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl [main] Normalizing identifier quoting [detail]
+2020-05-06 08:46:18,732 DEBUG o.h.c.Ejb3Column [main] Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Payment), mappingColumn=detail, insertable=true, updatable=true, unique=false}
+2020-05-06 08:46:18,733 DEBUG o.h.c.a.PropertyBinder [main] MetadataSourceProcessor property detail with lazy=false
+2020-05-06 08:46:18,733 DEBUG o.h.c.AbstractPropertyHolder [main] Attempting to locate auto-apply AttributeConverter for property [be.pxl.student.entity.Payment:detail]
+2020-05-06 08:46:18,733 DEBUG o.h.c.a.SimpleValueBinder [main] building SimpleValue for detail
+2020-05-06 08:46:18,733 TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl [main] Normalizing identifier quoting [detail]
+2020-05-06 08:46:18,733 TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl [main] Normalizing identifier quoting [detail]
+2020-05-06 08:46:18,734 TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl [main] Normalizing identifier quoting [detail]
+2020-05-06 08:46:18,734 DEBUG o.h.c.a.PropertyBinder [main] Building property detail
+2020-05-06 08:46:18,734 TRACE o.h.c.a.PropertyBinder [main] Cascading detail with null
+2020-05-06 08:46:18,745 DEBUG o.h.c.a.SimpleValueBinder [main] Starting fillSimpleValue for IBAN
+2020-05-06 08:46:18,746 DEBUG o.h.c.a.SimpleValueBinder [main] Starting fillSimpleValue for name
+2020-05-06 08:46:18,746 DEBUG o.h.c.a.SimpleValueBinder [main] Starting fillSimpleValue for Id
+2020-05-06 08:46:18,746 DEBUG o.h.c.a.SimpleValueBinder [main] Starting fillSimpleValue for amount
+2020-05-06 08:46:18,746 DEBUG o.h.c.a.SimpleValueBinder [main] Starting fillSimpleValue for currency
+2020-05-06 08:46:18,746 DEBUG o.h.c.a.SimpleValueBinder [main] Starting fillSimpleValue for date
+2020-05-06 08:46:18,746 DEBUG o.h.c.a.SimpleValueBinder [main] Starting fillSimpleValue for detail
+2020-05-06 08:46:18,747 TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl [main] Normalizing identifier quoting [IBAN]
+2020-05-06 08:46:18,758 TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl [main] Normalizing identifier quoting [Account]
+2020-05-06 08:46:18,758 TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl [main] Normalizing identifier quoting [IBAN]
+2020-05-06 08:46:18,759 TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl [main] Normalizing identifier quoting [account_IBAN]
+2020-05-06 08:46:18,759 TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl [main] Normalizing identifier quoting [account_IBAN]
+2020-05-06 08:46:18,759 TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl [main] Normalizing identifier quoting [IBAN]
+2020-05-06 08:46:18,759 TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl [main] Normalizing identifier quoting [account_IBAN]
+2020-05-06 08:46:18,759 TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl [main] Normalizing identifier quoting [account_IBAN]
+2020-05-06 08:46:18,775 DEBUG o.h.m.PrimaryKey [main] Forcing column [iban] to be non-null as it is part of the primary key for table [account]
+2020-05-06 08:46:18,776 DEBUG o.h.m.PrimaryKey [main] Forcing column [id] to be non-null as it is part of the primary key for table [payment]
+2020-05-06 08:46:18,776 DEBUG o.h.c.CollectionSecondPass [main] Second pass for collection: be.pxl.student.entity.Account.payments
+2020-05-06 08:46:18,779 DEBUG o.h.c.a.CollectionBinder [main] Binding a OneToMany: be.pxl.student.entity.Account.payments through a foreign key
+2020-05-06 08:46:18,782 DEBUG o.h.c.a.CollectionBinder [main] Mapping collection: be.pxl.student.entity.Account.payments -> Payment
+2020-05-06 08:46:18,795 DEBUG o.h.c.a.TableBinder [main] Retrieving property be.pxl.student.entity.Payment.account
+2020-05-06 08:46:18,795 DEBUG o.h.c.CollectionSecondPass [main] Mapped collection key: account_IBAN, one-to-many: be.pxl.student.entity.Payment
+2020-05-06 08:46:18,795 DEBUG o.h.b.i.InFlightMetadataCollectorImpl [main] Resolving reference to class: be.pxl.student.entity.Account
+2020-05-06 08:46:18,798 TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl [main] Normalizing identifier quoting [account_IBAN]
+2020-05-06 08:46:18,804 TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl [main] Normalizing identifier quoting [FK1i4swmssmrv7pp65ie2upf80y]
+2020-05-06 08:46:18,814 DEBUG o.h.b.i.InFlightMetadataCollectorImpl [main] Resolving reference to class: be.pxl.student.entity.Account
+2020-05-06 08:46:18,814 TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl [main] Normalizing identifier quoting [account_IBAN]
+2020-05-06 08:46:18,915 TRACE o.h.l.BatchFetchStyle [main] Interpreting BatchFetchStyle from setting : null
+2020-05-06 08:46:18,929 TRACE o.h.s.i.AbstractServiceRegistryImpl [main] Initializing service [role=org.hibernate.resource.transaction.spi.TransactionCoordinatorBuilder]
+2020-05-06 08:46:18,960 TRACE o.h.s.i.AbstractServiceRegistryImpl [main] Initializing service [role=org.hibernate.bytecode.spi.BytecodeProvider]
+2020-05-06 08:46:19,030 DEBUG o.h.i.SessionFactoryImpl [main] Building session factory
+2020-05-06 08:46:19,034 DEBUG o.h.c.Settings [main] SessionFactory name : null
+2020-05-06 08:46:19,034 DEBUG o.h.c.Settings [main] Automatic flush during beforeCompletion(): enabled
+2020-05-06 08:46:19,034 DEBUG o.h.c.Settings [main] Automatic session close at end of transaction: disabled
+2020-05-06 08:46:19,034 DEBUG o.h.c.Settings [main] Statistics: disabled
+2020-05-06 08:46:19,034 DEBUG o.h.c.Settings [main] Deleted entity synthetic identifier rollback: disabled
+2020-05-06 08:46:19,034 DEBUG o.h.c.Settings [main] Default entity-mode: pojo
+2020-05-06 08:46:19,034 DEBUG o.h.c.Settings [main] Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+2020-05-06 08:46:19,034 DEBUG o.h.c.Settings [main] Allow initialization of lazy state outside session : disabled
+2020-05-06 08:46:19,035 DEBUG o.h.c.Settings [main] Using BatchFetchStyle : LEGACY
+2020-05-06 08:46:19,035 DEBUG o.h.c.Settings [main] Default batch fetch size: -1
+2020-05-06 08:46:19,035 DEBUG o.h.c.Settings [main] Maximum outer join fetch depth: null
+2020-05-06 08:46:19,035 DEBUG o.h.c.Settings [main] Default null ordering: NONE
+2020-05-06 08:46:19,035 DEBUG o.h.c.Settings [main] Order SQL updates by primary key: disabled
+2020-05-06 08:46:19,035 DEBUG o.h.c.Settings [main] Order SQL inserts for batching: disabled
+2020-05-06 08:46:19,035 DEBUG o.h.c.Settings [main] multi-tenancy strategy : NONE
+2020-05-06 08:46:19,035 DEBUG o.h.c.Settings [main] JTA Track by Thread: enabled
+2020-05-06 08:46:19,035 DEBUG o.h.c.Settings [main] Query language substitutions: {}
+2020-05-06 08:46:19,035 DEBUG o.h.c.Settings [main] Named query checking : enabled
+2020-05-06 08:46:19,035 DEBUG o.h.c.Settings [main] Second-level cache: disabled
+2020-05-06 08:46:19,035 DEBUG o.h.c.Settings [main] Second-level query cache: disabled
+2020-05-06 08:46:19,035 DEBUG o.h.c.Settings [main] Second-level query cache factory: null
+2020-05-06 08:46:19,035 DEBUG o.h.c.Settings [main] Second-level cache region prefix: null
+2020-05-06 08:46:19,035 DEBUG o.h.c.Settings [main] Optimize second-level cache for minimal puts: disabled
+2020-05-06 08:46:19,035 DEBUG o.h.c.Settings [main] Structured second-level cache entries: disabled
+2020-05-06 08:46:19,035 DEBUG o.h.c.Settings [main] Second-level cache direct-reference entries: disabled
+2020-05-06 08:46:19,036 DEBUG o.h.c.Settings [main] Automatic eviction of collection cache: disabled
+2020-05-06 08:46:19,036 DEBUG o.h.c.Settings [main] JDBC batch size: 15
+2020-05-06 08:46:19,036 DEBUG o.h.c.Settings [main] JDBC batch updates for versioned data: enabled
+2020-05-06 08:46:19,036 DEBUG o.h.c.Settings [main] Scrollable result sets: enabled
+2020-05-06 08:46:19,036 DEBUG o.h.c.Settings [main] Wrap result sets: disabled
+2020-05-06 08:46:19,036 DEBUG o.h.c.Settings [main] JDBC3 getGeneratedKeys(): enabled
+2020-05-06 08:46:19,036 DEBUG o.h.c.Settings [main] JDBC result set fetch size: null
+2020-05-06 08:46:19,036 DEBUG o.h.c.Settings [main] Connection release mode: AFTER_STATEMENT
+2020-05-06 08:46:19,036 DEBUG o.h.c.Settings [main] Generate SQL with comments: disabled
+2020-05-06 08:46:19,036 DEBUG o.h.c.Settings [main] JPA compliance - query : disabled
+2020-05-06 08:46:19,036 DEBUG o.h.c.Settings [main] JPA compliance - closed-handling : disabled
+2020-05-06 08:46:19,036 DEBUG o.h.c.Settings [main] JPA compliance - lists : disabled
+2020-05-06 08:46:19,036 DEBUG o.h.c.Settings [main] JPA compliance - transactions : disabled
+2020-05-06 08:46:19,036 TRACE o.h.s.i.AbstractServiceRegistryImpl [main] Initializing service [role=org.hibernate.service.spi.SessionFactoryServiceRegistryFactory]
+2020-05-06 08:46:19,095 TRACE o.h.s.i.AbstractServiceRegistryImpl [main] Initializing service [role=org.hibernate.event.service.spi.EventListenerRegistry]
+2020-05-06 08:46:19,471 TRACE o.h.s.i.AbstractServiceRegistryImpl [main] Initializing service [role=org.hibernate.resource.beans.spi.ManagedBeanRegistry]
+2020-05-06 08:46:19,496 INFO o.h.o.beans [main] HHH10005002: No explicit CDI BeanManager reference was passed to Hibernate, but CDI is available on the Hibernate ClassLoader.
+2020-05-06 08:46:19,534 TRACE o.h.s.i.AbstractServiceRegistryImpl [main] Initializing service [role=org.hibernate.cache.spi.CacheImplementor]
+2020-05-06 08:46:19,579 DEBUG o.h.i.SessionFactoryImpl [main] Session factory constructed with filter configurations : {}
+2020-05-06 08:46:19,579 DEBUG o.h.i.SessionFactoryImpl [main] Instantiating session factory with properties: {java.specification.version=14, sun.cpu.isalist=amd64, sun.jnu.encoding=Cp1252, sun.arch.data.model=64, java.vendor.url=https://java.oracle.com/, catalina.useNaming=true, javax.persistence.jdbc.user=****, openejb.provider.default=org.apache.tomee, org.apache.logging.log4j.assignedSequences=5606, javax.persistence.validation.mode=AUTO, sun.boot.library.path=C:\Program Files\Java\jdk-14\bin, sun.java.command=org.apache.catalina.startup.Bootstrap start, jdk.debug=release, sun.stderr.encoding=cp850, java.specification.vendor=Oracle Corporation, java.naming.factory.url.pkgs=org.apache.naming:org.apache.openejb.core.ivm.naming, openejb.embedder.source=ServerListener, java.version.date=2020-03-17, java.home=C:\Program Files\Java\jdk-14, file.separator=\, java.vm.compressedOopsMode=Zero based, line.separator=
+, sun.stdout.encoding=cp850, java.vm.specification.vendor=Oracle Corporation, java.specification.name=Java Platform API Specification, hibernate.transaction.coordinator_class=class org.hibernate.resource.transaction.backend.jta.internal.JtaTransactionCoordinatorBuilderImpl, package.definition=sun.,java.,org.apache.catalina.,org.apache.coyote.,org.apache.jasper.,org.apache.naming.,org.apache.tomcat., openejb.deployments.classpath.filter.systemapps=false, hibernate.hbm2ddl.auto=update, user.script=, java.util.logging.config.file=C:\Users\11601686\Documents\School\AON\Programming Advanced\Java Advanced\Code\budgetplannerusecase-FZandijk\target\apache-tomee\conf\logging.properties, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, java.runtime.version=14+36-1461, tomee.jsp-development=true, user.name=11601686, org.apache.johnzon.max-string-length=8192, file.encoding=Cp1252, javax.persistence.jtaDataSource=org.apache.openejb.resource.jdbc.managed.local.ManagedDataSource@3d96fa9e, catalina.ext.dirs=C:\Users\11601686\Documents\School\AON\Programming Advanced\Java Advanced\Code\budgetplannerusecase-FZandijk\target\apache-tomee\lib, derby.system.home=C:\Users\11601686\Documents\School\AON\Programming Advanced\Java Advanced\Code\budgetplannerusecase-FZandijk\target\apache-tomee, org.apache.catalina.STRICT_SERVLET_COMPLIANCE=false, java.io.tmpdir=C:\Users\11601686\Documents\School\AON\Programming Advanced\Java Advanced\Code\budgetplannerusecase-FZandijk\target\apache-tomee\temp, tomcat.util.scan.StandardJarScanFilter.jarsToScan=log4j-taglib*.jar,log4j-web*.jar,log4javascript*.jar,slf4j-taglib*.jar, java.version=14, tomcat.util.scan.StandardJarScanFilter.jarsToSkip=annotations-api.jar,ant-junit*.jar,ant-launcher.jar,ant.jar,asm-*.jar,aspectj*.jar,bootstrap.jar,catalina-ant.jar,catalina-ha.jar,catalina-ssi.jar,catalina-storeconfig.jar,catalina-tribes.jar,catalina.jar,cglib-*.jar,cobertura-*.jar,commons-beanutils*.jar,commons-codec*.jar,commons-collections*.jar,commons-daemon.jar,commons-dbcp*.jar,commons-digester*.jar,commons-fileupload*.jar,commons-httpclient*.jar,commons-io*.jar,commons-lang*.jar,commons-logging*.jar,commons-math*.jar,commons-pool*.jar,dom4j-*.jar,easymock-*.jar,ecj-*.jar,el-api.jar,geronimo-spec-jaxrpc*.jar,h2*.jar,hamcrest-*.jar,hibernate*.jar,httpclient*.jar,icu4j-*.jar,jasper-el.jar,jasper.jar,jaspic-api.jar,jaxb-*.jar,jaxen-*.jar,jdom-*.jar,jetty-*.jar,jmx-tools.jar,jmx.jar,jsp-api.jar,jstl.jar,jta*.jar,junit-*.jar,junit.jar,log4j*.jar,mail*.jar,objenesis-*.jar,oraclepki.jar,oro-*.jar,servlet-api-*.jar,servlet-api.jar,slf4j*.jar,taglibs-standard-spec-*.jar,tagsoup-*.jar,tomcat-api.jar,tomcat-coyote.jar,tomcat-dbcp.jar,tomcat-i18n-*.jar,tomcat-jdbc.jar,tomcat-jni.jar,tomcat-juli-adapters.jar,tomcat-juli.jar,tomcat-util-scan.jar,tomcat-util.jar,tomcat-websocket.jar,tools.jar,websocket-api.jar,wsdl4j*.jar,xercesImpl.jar,xml-apis.jar,xmlParserAPIs-*.jar,xmlParserAPIs.jar,xom-*.jar, java.vm.specification.name=Java Virtual Machine Specification, sun.os.patch.level=, tomcat.built=Dec 7 2019 16:42:04 UTC, java.library.path=C:\Program Files\Java\jdk-14\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Selenium\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\oraclexe\app\oracle\product\11.2.0\server\bin;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Users\11601686\Downloads\php-7.2.2-nts-Win32-VC15-x64;C:\WINDOWS\System32\OpenSSH\;"C:\Program Files\Git\cmd;C:\Program Files (x86)\Git\bin;";C:\Users\11601686\Documents\apache-maven-3.6.0-bin\apache-maven-3.6.0\bin;C:\Program Files\Git\bin;C:\Program Files (x86)\Java\jre1.8.0_191\bin\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\nodejs\;C:\Program Files\Java\jre1.8.0_231\bin;;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\11601686\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\11601686\AppData\Local\Microsoft\WindowsApps;C:\Users\11601686\.dotnet\tools;C:\Users\11601686\AppData\Roaming\npm;., java.vendor=Oracle Corporation, org.apache.tomcat.util.http.ServerCookie.ALLOW_HTTP_SEPARATORS_IN_V0=true, tomee.version=8.0.1, sun.io.unicode.encoding=UnicodeLittle, tomcat.util.buf.StringCache.byte.enabled=true, java.class.path=C:\Users\11601686\Documents\School\AON\Programming Advanced\Java Advanced\Code\budgetplannerusecase-FZandijk\target\apache-tomee\bin\bootstrap.jar;C:\Users\11601686\Documents\School\AON\Programming Advanced\Java Advanced\Code\budgetplannerusecase-FZandijk\target\apache-tomee\bin\tomcat-juli.jar, tomcat.version=9.0.30.0, java.vm.vendor=Oracle Corporation, openejb.home=C:\Users\11601686\Documents\School\AON\Programming Advanced\Java Advanced\Code\budgetplannerusecase-FZandijk\target\apache-tomee, user.variant=, openejb.system.apps=false, user.timezone=Europe/Brussels, java.vm.specification.version=14, os.name=Windows 10, sun.java.launcher=SUN_STANDARD, user.country=BE, openejb.base=C:\Users\11601686\Documents\School\AON\Programming Advanced\Java Advanced\Code\budgetplannerusecase-FZandijk\target\apache-tomee, hibernate.transaction.jta.platform=org.apache.openejb.hibernate.OpenEJBJtaPlatform2, javax.persistence.sharedCache.mode=UNSPECIFIED, sun.cpu.endian=little, user.home=C:\Users\11601686, javax.persistence.validation.factory=org.apache.openejb.assembler.classic.ValidatorBuilder$OpenEJBValidatorFactory@7ff09659, user.language=nl, openejb.deployments.classpath=false, package.access=sun.,org.apache.catalina.,org.apache.coyote.,org.apache.jasper.,org.apache.tomcat., openejb.loader=tomcat-system, server.loader=, java.naming.factory.initial=org.apache.naming.java.javaURLContextFactory, path.separator=;, org.apache.openejb.core.security.JaccProvider=org.apache.openejb.core.security.jacc.BasicJaccProvider, common.loader="C:\Users\11601686\Documents\School\AON\Programming Advanced\Java Advanced\Code\budgetplannerusecase-FZandijk\target\apache-tomee/lib","C:\Users\11601686\Documents\School\AON\Programming Advanced\Java Advanced\Code\budgetplannerusecase-FZandijk\target\apache-tomee/lib/*.jar","C:\Users\11601686\Documents\School\AON\Programming Advanced\Java Advanced\Code\budgetplannerusecase-FZandijk\target\apache-tomee/lib","C:\Users\11601686\Documents\School\AON\Programming Advanced\Java Advanced\Code\budgetplannerusecase-FZandijk\target\apache-tomee/lib/*.jar", hibernate.connection.username=****, os.version=10.0, openejb.version=8.0.1, java.runtime.name=Java(TM) SE Runtime Environment, hibernate.ejb.persistenceUnitName=budgetplanner_pu, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, hibernate.show_sql=true, tomee.remote.support=true, java.vendor.url.bug=https://bugreport.java.com/bugreport/, catalina.home=C:\Users\11601686\Documents\School\AON\Programming Advanced\Java Advanced\Code\budgetplannerusecase-FZandijk\target\apache-tomee, user.dir=C:\Users\11601686\Documents\School\AON\Programming Advanced\Java Advanced\Code\budgetplannerusecase-FZandijk\target\apache-tomee, bval.in-container=true, os.arch=amd64, openjpa.Log=org.apache.openejb.openjpa.JULOpenJPALogFactory, hibernate.connection.password=****, tomee.serialization.class.blacklist=*, shared.loader=, catalina.base=C:\Users\11601686\Documents\School\AON\Programming Advanced\Java Advanced\Code\budgetplannerusecase-FZandijk\target\apache-tomee, hibernate.boot.CfgXmlAccessService.key=org.hibernate.boot.registry.StandardServiceRegistryBuilder$1@517fbf62, noBanner=true, java.util.logging.manager=org.apache.juli.ClassLoaderLogManager, openejb.session.manager=org.apache.tomee.catalina.session.QuickSessionManager, org.apache.webbeans.logger.WebBeansLoggerFacade=org.apache.openejb.cdi.logging.ContainerJULLoggerFactory, java.vm.info=mixed mode, sharing, java.vm.version=14+36-1461, hibernate.bytecode.use_reflection_optimizer=false, javax.security.jacc.PolicyConfigurationFactory.provider=org.apache.openejb.core.security.JaccProvider$Factory, hibernate.connection.datasource=org.apache.openejb.resource.jdbc.managed.local.ManagedDataSource@3d96fa9e, javax.persistence.jdbc.password=****, java.class.version=58.0, authconfigprovider.factory=false}
+2020-05-06 08:46:19,786 TRACE o.h.s.i.AbstractServiceRegistryImpl [main] Initializing service [role=org.hibernate.engine.query.spi.NativeQueryInterpreter]
+2020-05-06 08:46:19,834 DEBUG o.h.b.i.ClassLoaderAccessImpl [main] Not known whether passed class name [be.pxl.student.entity.Account] is safe
+2020-05-06 08:46:19,835 DEBUG o.h.b.i.ClassLoaderAccessImpl [main] No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : be.pxl.student.entity.Account
+2020-05-06 08:46:19,939 DEBUG o.h.b.i.ClassLoaderAccessImpl [main] Not known whether passed class name [be.pxl.student.entity.Payment] is safe
+2020-05-06 08:46:19,939 DEBUG o.h.b.i.ClassLoaderAccessImpl [main] No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : be.pxl.student.entity.Payment
+2020-05-06 08:46:19,963 DEBUG o.h.s.s.JaccIntegrator [main] Skipping JACC integration as it was not enabled
+2020-05-06 08:46:19,964 DEBUG o.h.i.SessionFactoryImpl [main] Instantiated session factory
+2020-05-06 08:46:19,964 DEBUG o.h.t.s.TypeConfiguration$Scope [main] Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@26d0ece6] to SessionFactoryImpl [org.hibernate.internal.SessionFactoryImpl@24615687]
+2020-05-06 08:46:20,029 TRACE o.h.s.i.AbstractServiceRegistryImpl [main] Initializing service [role=org.hibernate.persister.spi.PersisterFactory]
+2020-05-06 08:46:20,045 TRACE o.h.s.i.AbstractServiceRegistryImpl [main] Initializing service [role=org.hibernate.persister.spi.PersisterClassResolver]
+2020-05-06 08:46:20,177 TRACE o.h.s.i.AbstractServiceRegistryImpl [main] Initializing service [role=org.hibernate.property.access.spi.PropertyAccessStrategyResolver]
+2020-05-06 08:46:20,209 DEBUG o.h.b.i.ClassLoaderAccessImpl [main] Not known whether passed class name [be.pxl.student.entity.Account] is safe
+2020-05-06 08:46:20,209 DEBUG o.h.b.i.ClassLoaderAccessImpl [main] No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : be.pxl.student.entity.Account
+2020-05-06 08:46:20,350 DEBUG o.h.b.i.ClassLoaderAccessImpl [main] Not known whether passed class name [be.pxl.student.entity.Account] is safe
+2020-05-06 08:46:20,350 DEBUG o.h.b.i.ClassLoaderAccessImpl [main] No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : be.pxl.student.entity.Account
+2020-05-06 08:46:20,383 TRACE o.h.s.i.AbstractServiceRegistryImpl [main] Initializing service [role=org.hibernate.bytecode.spi.ProxyFactoryFactory]
+2020-05-06 08:46:21,601 TRACE o.h.p.e.AbstractPropertyMapping [main] Skipping duplicate registration of path [name], existing type = [org.hibernate.type.StringType@5b0dbfb], incoming type = [org.hibernate.type.StringType@5b0dbfb]
+2020-05-06 08:46:21,601 TRACE o.h.p.e.AbstractPropertyMapping [main] Skipping duplicate registration of path [payments], existing type = [org.hibernate.type.BagType(be.pxl.student.entity.Account.payments)], incoming type = [org.hibernate.type.BagType(be.pxl.student.entity.Account.payments)]
+2020-05-06 08:46:21,615 DEBUG o.h.b.i.ClassLoaderAccessImpl [main] Not known whether passed class name [be.pxl.student.entity.Payment] is safe
+2020-05-06 08:46:21,615 DEBUG o.h.b.i.ClassLoaderAccessImpl [main] No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : be.pxl.student.entity.Payment
+2020-05-06 08:46:21,615 DEBUG o.h.b.i.ClassLoaderAccessImpl [main] Not known whether passed class name [be.pxl.student.entity.Payment] is safe
+2020-05-06 08:46:21,616 DEBUG o.h.b.i.ClassLoaderAccessImpl [main] No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : be.pxl.student.entity.Payment
+2020-05-06 08:46:21,651 TRACE o.h.p.e.AbstractPropertyMapping [main] Skipping duplicate registration of path [account.id], existing type = [org.hibernate.type.StringType@5b0dbfb], incoming type = [org.hibernate.type.StringType@5b0dbfb]
+2020-05-06 08:46:21,651 TRACE o.h.p.e.AbstractPropertyMapping [main] Skipping duplicate registration of path [account.IBAN], existing type = [org.hibernate.type.StringType@5b0dbfb], incoming type = [org.hibernate.type.StringType@5b0dbfb]
+2020-05-06 08:46:21,652 TRACE o.h.p.e.AbstractPropertyMapping [main] Skipping duplicate registration of path [account], existing type = [org.hibernate.type.ManyToOneType(be.pxl.student.entity.Account)], incoming type = [org.hibernate.type.ManyToOneType(be.pxl.student.entity.Account)]
+2020-05-06 08:46:21,652 TRACE o.h.p.e.AbstractPropertyMapping [main] Skipping duplicate registration of path [account.id], existing type = [org.hibernate.type.StringType@5b0dbfb], incoming type = [org.hibernate.type.StringType@5b0dbfb]
+2020-05-06 08:46:21,652 TRACE o.h.p.e.AbstractPropertyMapping [main] Skipping duplicate registration of path [account.id], existing type = [org.hibernate.type.StringType@5b0dbfb], incoming type = [org.hibernate.type.StringType@5b0dbfb]
+2020-05-06 08:46:21,652 TRACE o.h.p.e.AbstractPropertyMapping [main] Skipping duplicate registration of path [account.IBAN], existing type = [org.hibernate.type.StringType@5b0dbfb], incoming type = [org.hibernate.type.StringType@5b0dbfb]
+2020-05-06 08:46:21,652 TRACE o.h.p.e.AbstractPropertyMapping [main] Skipping duplicate registration of path [account.IBAN], existing type = [org.hibernate.type.StringType@5b0dbfb], incoming type = [org.hibernate.type.StringType@5b0dbfb]
+2020-05-06 08:46:21,652 TRACE o.h.p.e.AbstractPropertyMapping [main] Skipping duplicate registration of path [amount], existing type = [org.hibernate.type.FloatType@340cb97f], incoming type = [org.hibernate.type.FloatType@340cb97f]
+2020-05-06 08:46:21,652 TRACE o.h.p.e.AbstractPropertyMapping [main] Skipping duplicate registration of path [currency], existing type = [org.hibernate.type.StringType@5b0dbfb], incoming type = [org.hibernate.type.StringType@5b0dbfb]
+2020-05-06 08:46:21,653 TRACE o.h.p.e.AbstractPropertyMapping [main] Skipping duplicate registration of path [date], existing type = [org.hibernate.type.LocalDateTimeType@7ddcb0dc], incoming type = [org.hibernate.type.LocalDateTimeType@7ddcb0dc]
+2020-05-06 08:46:21,653 TRACE o.h.p.e.AbstractPropertyMapping [main] Skipping duplicate registration of path [detail], existing type = [org.hibernate.type.StringType@5b0dbfb], incoming type = [org.hibernate.type.StringType@5b0dbfb]
+2020-05-06 08:46:21,694 DEBUG o.h.p.c.AbstractCollectionPersister [main] Static SQL for collection: be.pxl.student.entity.Account.payments
+2020-05-06 08:46:21,694 DEBUG o.h.p.c.AbstractCollectionPersister [main]  Row insert: update Payment set account_IBAN=? where Id=?
+2020-05-06 08:46:21,694 DEBUG o.h.p.c.AbstractCollectionPersister [main]  Row update: update Payment set  where Id=?
+2020-05-06 08:46:21,694 DEBUG o.h.p.c.AbstractCollectionPersister [main]  Row delete: update Payment set account_IBAN=null where account_IBAN=? and Id=?
+2020-05-06 08:46:21,694 DEBUG o.h.p.c.AbstractCollectionPersister [main]  One-shot delete: update Payment set account_IBAN=null where account_IBAN=?
+2020-05-06 08:46:21,708 DEBUG o.h.p.e.AbstractEntityPersister [main] Static SQL for entity: be.pxl.student.entity.Account
+2020-05-06 08:46:21,708 DEBUG o.h.p.e.AbstractEntityPersister [main]  Version select: select IBAN from Account where IBAN =?
+2020-05-06 08:46:21,709 DEBUG o.h.p.e.AbstractEntityPersister [main]  Snapshot select: select account_.IBAN, account_.name as name2_0_ from Account account_ where account_.IBAN=?
+2020-05-06 08:46:21,709 DEBUG o.h.p.e.AbstractEntityPersister [main]  Insert 0: insert into Account (name, IBAN) values (?, ?)
+2020-05-06 08:46:21,709 DEBUG o.h.p.e.AbstractEntityPersister [main]  Update 0: update Account set name=? where IBAN=?
+2020-05-06 08:46:21,709 DEBUG o.h.p.e.AbstractEntityPersister [main]  Delete 0: delete from Account where IBAN=?
+2020-05-06 08:46:21,866 TRACE o.h.l.p.b.i.AbstractLoadPlanBuildingAssociationVisitationStrategy [main]  Starting root entity : be.pxl.student.entity.Account
+2020-05-06 08:46:21,924 DEBUG o.h.l.p.b.i.s.QuerySpacesImpl [main] Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@35cbeb54]
+2020-05-06 08:46:21,927 TRACE o.h.l.p.b.i.AbstractLoadPlanBuildingAssociationVisitationStrategy [main] Pushing fetch source to stack : org.hibernate.loader.plan.build.internal.returns.EntityReturnImpl@49f2646
+2020-05-06 08:46:21,930 TRACE o.h.l.p.b.i.AbstractLoadPlanBuildingAssociationVisitationStrategy [main] .. Registering AssociationKey : AssociationKey(table=Account, columns={IBAN}) -> org.hibernate.loader.plan.build.internal.returns.EntityReturnImpl@49f2646
+2020-05-06 08:46:21,930 TRACE o.h.l.p.b.i.AbstractLoadPlanBuildingAssociationVisitationStrategy [main] >> Starting entity identifier : be.pxl.student.entity.Account
+2020-05-06 08:46:21,933 DEBUG o.h.p.w.s.MetamodelGraphWalker [main] Visiting attribute path : name
+2020-05-06 08:46:21,933 TRACE o.h.l.p.b.i.AbstractLoadPlanBuildingAssociationVisitationStrategy [main] >> Starting attribute Attribute(name=name, type=string [non-identifier])
+2020-05-06 08:46:21,933 TRACE o.h.l.p.b.i.AbstractLoadPlanBuildingAssociationVisitationStrategy [main] << Finishing up attribute : Attribute(name=name, type=string [non-identifier])
+2020-05-06 08:46:21,934 DEBUG o.h.p.w.s.MetamodelGraphWalker [main] Visiting attribute path : payments
+2020-05-06 08:46:21,945 TRACE o.h.l.p.b.i.AbstractLoadPlanBuildingAssociationVisitationStrategy [main] >> Starting attribute Attribute(name=payments, type=java.util.Collection(be.pxl.student.entity.Account.payments) [non-identifier,association])
+2020-05-06 08:46:21,970 DEBUG o.h.l.p.b.i.s.QuerySpacesImpl [main] Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@20914835]
+2020-05-06 08:46:21,980 DEBUG o.h.l.p.b.i.s.QuerySpacesImpl [main] Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@f01fc6d]
+2020-05-06 08:46:21,983 TRACE o.h.l.p.b.i.AbstractLoadPlanBuildingAssociationVisitationStrategy [main] << Finishing up attribute : Attribute(name=payments, type=java.util.Collection(be.pxl.student.entity.Account.payments) [non-identifier,association])
+2020-05-06 08:46:21,984 TRACE o.h.l.p.b.i.AbstractLoadPlanBuildingAssociationVisitationStrategy [main] Popped fetch owner from stack : org.hibernate.loader.plan.build.internal.returns.EntityReturnImpl@49f2646
+2020-05-06 08:46:21,984 TRACE o.h.l.p.b.i.AbstractLoadPlanBuildingAssociationVisitationStrategy [main]  Finished root entity : be.pxl.student.entity.Account
+2020-05-06 08:46:21,984 DEBUG o.h.l.p.b.i.FetchStyleLoadPlanBuildingAssociationVisitationStrategy [main] Building LoadPlan...
+2020-05-06 08:46:22,072 DEBUG o.h.l.p.e.i.LoadQueryJoinAndFetchProcessor [main] processing queryspace <gen:0>
+2020-05-06 08:46:22,096 DEBUG o.h.l.p.b.s.LoadPlanTreePrinter [main] LoadPlan(entity=be.pxl.student.entity.Account)
+    - Returns
+       - EntityReturnImpl(entity=be.pxl.student.entity.Account, querySpaceUid=<gen:0>, path=be.pxl.student.entity.Account)
+          - CollectionAttributeFetchImpl(collection=be.pxl.student.entity.Account.payments, querySpaceUid=<gen:1>, path=be.pxl.student.entity.Account.payments)
+             - (collection element) CollectionFetchableElementEntityGraph(entity=be.pxl.student.entity.Payment, querySpaceUid=<gen:2>, path=be.pxl.student.entity.Account.payments.<elements>)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=be.pxl.student.entity.Account)
+          - SQL table alias mapping - account0_
+          - alias suffix - 0_
+          - suffixed key columns - {iban1_0_0_}
+
+2020-05-06 08:46:22,106 DEBUG o.h.l.e.p.EntityLoader [main] Static select for entity be.pxl.student.entity.Account [NONE]: select account0_.IBAN as iban1_0_0_, account0_.name as name2_0_0_ from Account account0_ where account0_.IBAN=?
+2020-05-06 08:46:22,106 TRACE o.h.l.p.b.i.AbstractLoadPlanBuildingAssociationVisitationStrategy [main]  Starting root entity : be.pxl.student.entity.Account
+2020-05-06 08:46:22,106 DEBUG o.h.l.p.b.i.s.QuerySpacesImpl [main] Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@2e6b379c]
+2020-05-06 08:46:22,106 TRACE o.h.l.p.b.i.AbstractLoadPlanBuildingAssociationVisitationStrategy [main] Pushing fetch source to stack : org.hibernate.loader.plan.build.internal.returns.EntityReturnImpl@5e7e7a7e
+2020-05-06 08:46:22,106 TRACE o.h.l.p.b.i.AbstractLoadPlanBuildingAssociationVisitationStrategy [main] .. Registering AssociationKey : AssociationKey(table=Account, columns={IBAN}) -> org.hibernate.loader.plan.build.internal.returns.EntityReturnImpl@5e7e7a7e
+2020-05-06 08:46:22,106 TRACE o.h.l.p.b.i.AbstractLoadPlanBuildingAssociationVisitationStrategy [main] >> Starting entity identifier : be.pxl.student.entity.Account
+2020-05-06 08:46:22,106 DEBUG o.h.p.w.s.MetamodelGraphWalker [main] Visiting attribute path : name
+2020-05-06 08:46:22,106 TRACE o.h.l.p.b.i.AbstractLoadPlanBuildingAssociationVisitationStrategy [main] >> Starting attribute Attribute(name=name, type=string [non-identifier])
+2020-05-06 08:46:22,106 TRACE o.h.l.p.b.i.AbstractLoadPlanBuildingAssociationVisitationStrategy [main] << Finishing up attribute : Attribute(name=name, type=string [non-identifier])
+2020-05-06 08:46:22,107 DEBUG o.h.p.w.s.MetamodelGraphWalker [main] Visiting attribute path : payments
+2020-05-06 08:46:22,107 TRACE o.h.l.p.b.i.AbstractLoadPlanBuildingAssociationVisitationStrategy [main] >> Starting attribute Attribute(name=payments, type=java.util.Collection(be.pxl.student.entity.Account.payments) [non-identifier,association])
+2020-05-06 08:46:22,107 DEBUG o.h.l.p.b.i.s.QuerySpacesImpl [main] Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@1ff81b0d]
+2020-05-06 08:46:22,107 DEBUG o.h.l.p.b.i.s.QuerySpacesImpl [main] Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@1c610f]
+2020-05-06 08:46:22,107 TRACE o.h.l.p.b.i.AbstractLoadPlanBuildingAssociationVisitationStrategy [main] << Finishing up attribute : Attribute(name=payments, type=java.util.Collection(be.pxl.student.entity.Account.payments) [non-identifier,association])
+2020-05-06 08:46:22,107 TRACE o.h.l.p.b.i.AbstractLoadPlanBuildingAssociationVisitationStrategy [main] Popped fetch owner from stack : org.hibernate.loader.plan.build.internal.returns.EntityReturnImpl@5e7e7a7e
+2020-05-06 08:46:22,107 TRACE o.h.l.p.b.i.AbstractLoadPlanBuildingAssociationVisitationStrategy [main]  Finished root entity : be.pxl.student.entity.Account
+2020-05-06 08:46:22,107 DEBUG o.h.l.p.b.i.FetchStyleLoadPlanBuildingAssociationVisitationStrategy [main] Building LoadPlan...
+2020-05-06 08:46:22,108 DEBUG o.h.l.p.e.i.LoadQueryJoinAndFetchProcessor [main] processing queryspace <gen:0>
+2020-05-06 08:46:22,108 DEBUG o.h.l.p.b.s.LoadPlanTreePrinter [main] LoadPlan(entity=be.pxl.student.entity.Account)
+    - Returns
+       - EntityReturnImpl(entity=be.pxl.student.entity.Account, querySpaceUid=<gen:0>, path=be.pxl.student.entity.Account)
+          - CollectionAttributeFetchImpl(collection=be.pxl.student.entity.Account.payments, querySpaceUid=<gen:1>, path=be.pxl.student.entity.Account.payments)
+             - (collection element) CollectionFetchableElementEntityGraph(entity=be.pxl.student.entity.Payment, querySpaceUid=<gen:2>, path=be.pxl.student.entity.Account.payments.<elements>)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=be.pxl.student.entity.Account)
+          - SQL table alias mapping - account0_
+          - alias suffix - 0_
+          - suffixed key columns - {iban1_0_0_}
+
+2020-05-06 08:46:22,108 DEBUG o.h.l.e.p.EntityLoader [main] Static select for entity be.pxl.student.entity.Account [READ]: select account0_.IBAN as iban1_0_0_, account0_.name as name2_0_0_ from Account account0_ where account0_.IBAN=?
+2020-05-06 08:46:22,193 DEBUG o.h.l.Loader [main] Static select for action ACTION_MERGE on entity be.pxl.student.entity.Account: select account0_.IBAN as iban1_0_0_, account0_.name as name2_0_0_ from Account account0_ where account0_.IBAN=?
+2020-05-06 08:46:22,194 DEBUG o.h.l.Loader [main] Static select for action ACTION_REFRESH on entity be.pxl.student.entity.Account: select account0_.IBAN as iban1_0_0_, account0_.name as name2_0_0_ from Account account0_ where account0_.IBAN=?
+2020-05-06 08:46:22,205 DEBUG o.h.p.e.AbstractEntityPersister [main] Static SQL for entity: be.pxl.student.entity.Payment
+2020-05-06 08:46:22,205 DEBUG o.h.p.e.AbstractEntityPersister [main]  Version select: select Id from Payment where Id =?
+2020-05-06 08:46:22,205 DEBUG o.h.p.e.AbstractEntityPersister [main]  Snapshot select: select payment_.Id, payment_.account_IBAN as account_6_1_, payment_.amount as amount2_1_, payment_.currency as currency3_1_, payment_.date as date4_1_, payment_.detail as detail5_1_ from Payment payment_ where payment_.Id=?
+2020-05-06 08:46:22,205 DEBUG o.h.p.e.AbstractEntityPersister [main]  Insert 0: insert into Payment (account_IBAN, amount, currency, date, detail, Id) values (?, ?, ?, ?, ?, ?)
+2020-05-06 08:46:22,205 DEBUG o.h.p.e.AbstractEntityPersister [main]  Update 0: update Payment set account_IBAN=?, amount=?, currency=?, date=?, detail=? where Id=?
+2020-05-06 08:46:22,205 DEBUG o.h.p.e.AbstractEntityPersister [main]  Delete 0: delete from Payment where Id=?
+2020-05-06 08:46:22,206 DEBUG o.h.p.e.AbstractEntityPersister [main]  Identity insert: insert into Payment (Id, account_IBAN, amount, currency, date, detail) values (default, ?, ?, ?, ?, ?)
+2020-05-06 08:46:22,206 TRACE o.h.l.p.b.i.AbstractLoadPlanBuildingAssociationVisitationStrategy [main]  Starting root entity : be.pxl.student.entity.Payment
+2020-05-06 08:46:22,206 DEBUG o.h.l.p.b.i.s.QuerySpacesImpl [main] Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@4ac7856f]
+2020-05-06 08:46:22,206 TRACE o.h.l.p.b.i.AbstractLoadPlanBuildingAssociationVisitationStrategy [main] Pushing fetch source to stack : org.hibernate.loader.plan.build.internal.returns.EntityReturnImpl@432f4626
+2020-05-06 08:46:22,206 TRACE o.h.l.p.b.i.AbstractLoadPlanBuildingAssociationVisitationStrategy [main] .. Registering AssociationKey : AssociationKey(table=Payment, columns={Id}) -> org.hibernate.loader.plan.build.internal.returns.EntityReturnImpl@432f4626
+2020-05-06 08:46:22,206 TRACE o.h.l.p.b.i.AbstractLoadPlanBuildingAssociationVisitationStrategy [main] >> Starting entity identifier : be.pxl.student.entity.Payment
+2020-05-06 08:46:22,206 DEBUG o.h.p.w.s.MetamodelGraphWalker [main] Visiting attribute path : account
+2020-05-06 08:46:22,207 TRACE o.h.l.p.b.i.AbstractLoadPlanBuildingAssociationVisitationStrategy [main] >> Starting attribute Attribute(name=account, type=be.pxl.student.entity.Account [non-identifier,association])
+2020-05-06 08:46:22,207 DEBUG o.h.l.p.b.i.s.QuerySpacesImpl [main] Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@297c3a43]
+2020-05-06 08:46:22,219 TRACE o.h.l.p.b.i.AbstractLoadPlanBuildingAssociationVisitationStrategy [main] Pushing fetch source to stack : org.hibernate.loader.plan.build.internal.returns.EntityAttributeFetchImpl@35841d6
+2020-05-06 08:46:22,219 TRACE o.h.l.p.b.i.AbstractLoadPlanBuildingAssociationVisitationStrategy [main] .... Registering AssociationKey : AssociationKey(table=Payment, columns={account_IBAN}) -> org.hibernate.loader.plan.build.internal.returns.EntityAttributeFetchImpl@35841d6
+2020-05-06 08:46:22,219 TRACE o.h.l.p.b.i.AbstractLoadPlanBuildingAssociationVisitationStrategy [main] >>>> Starting entity identifier : be.pxl.student.entity.Account
+2020-05-06 08:46:22,219 DEBUG o.h.p.w.s.MetamodelGraphWalker [main] Visiting attribute path : account.name
+2020-05-06 08:46:22,219 TRACE o.h.l.p.b.i.AbstractLoadPlanBuildingAssociationVisitationStrategy [main] >>>> Starting attribute Attribute(name=name, type=string [non-identifier])
+2020-05-06 08:46:22,219 TRACE o.h.l.p.b.i.AbstractLoadPlanBuildingAssociationVisitationStrategy [main] <<<< Finishing up attribute : Attribute(name=name, type=string [non-identifier])
+2020-05-06 08:46:22,219 DEBUG o.h.p.w.s.MetamodelGraphWalker [main] Visiting attribute path : account.payments
+2020-05-06 08:46:22,219 DEBUG o.h.p.w.s.MetamodelGraphWalker [main] Property path deemed to be circular : account.payments
+2020-05-06 08:46:22,219 TRACE o.h.l.p.b.i.AbstractLoadPlanBuildingAssociationVisitationStrategy [main] Popped fetch owner from stack : org.hibernate.loader.plan.build.internal.returns.EntityAttributeFetchImpl@35841d6
+2020-05-06 08:46:22,219 TRACE o.h.l.p.b.i.AbstractLoadPlanBuildingAssociationVisitationStrategy [main] << Finishing up attribute : Attribute(name=account, type=be.pxl.student.entity.Account [non-identifier,association])
+2020-05-06 08:46:22,220 DEBUG o.h.p.w.s.MetamodelGraphWalker [main] Visiting attribute path : amount
+2020-05-06 08:46:22,220 TRACE o.h.l.p.b.i.AbstractLoadPlanBuildingAssociationVisitationStrategy [main] >> Starting attribute Attribute(name=amount, type=float [non-identifier])
+2020-05-06 08:46:22,220 TRACE o.h.l.p.b.i.AbstractLoadPlanBuildingAssociationVisitationStrategy [main] << Finishing up attribute : Attribute(name=amount, type=float [non-identifier])
+2020-05-06 08:46:22,220 DEBUG o.h.p.w.s.MetamodelGraphWalker [main] Visiting attribute path : currency
+2020-05-06 08:46:22,220 TRACE o.h.l.p.b.i.AbstractLoadPlanBuildingAssociationVisitationStrategy [main] >> Starting attribute Attribute(name=currency, type=string [non-identifier])
+2020-05-06 08:46:22,220 TRACE o.h.l.p.b.i.AbstractLoadPlanBuildingAssociationVisitationStrategy [main] << Finishing up attribute : Attribute(name=currency, type=string [non-identifier])
+2020-05-06 08:46:22,220 DEBUG o.h.p.w.s.MetamodelGraphWalker [main] Visiting attribute path : date
+2020-05-06 08:46:22,220 TRACE o.h.l.p.b.i.AbstractLoadPlanBuildingAssociationVisitationStrategy [main] >> Starting attribute Attribute(name=date, type=LocalDateTime [non-identifier])
+2020-05-06 08:46:22,220 TRACE o.h.l.p.b.i.AbstractLoadPlanBuildingAssociationVisitationStrategy [main] << Finishing up attribute : Attribute(name=date, type=LocalDateTime [non-identifier])
+2020-05-06 08:46:22,220 DEBUG o.h.p.w.s.MetamodelGraphWalker [main] Visiting attribute path : detail
+2020-05-06 08:46:22,220 TRACE o.h.l.p.b.i.AbstractLoadPlanBuildingAssociationVisitationStrategy [main] >> Starting attribute Attribute(name=detail, type=string [non-identifier])
+2020-05-06 08:46:22,220 TRACE o.h.l.p.b.i.AbstractLoadPlanBuildingAssociationVisitationStrategy [main] << Finishing up attribute : Attribute(name=detail, type=string [non-identifier])
+2020-05-06 08:46:22,220 TRACE o.h.l.p.b.i.AbstractLoadPlanBuildingAssociationVisitationStrategy [main] Popped fetch owner from stack : org.hibernate.loader.plan.build.internal.returns.EntityReturnImpl@432f4626
+2020-05-06 08:46:22,220 TRACE o.h.l.p.b.i.AbstractLoadPlanBuildingAssociationVisitationStrategy [main]  Finished root entity : be.pxl.student.entity.Payment
+2020-05-06 08:46:22,220 DEBUG o.h.l.p.b.i.FetchStyleLoadPlanBuildingAssociationVisitationStrategy [main] Building LoadPlan...
+2020-05-06 08:46:22,221 DEBUG o.h.l.p.e.i.LoadQueryJoinAndFetchProcessor [main] processing queryspace <gen:0>
+2020-05-06 08:46:22,224 DEBUG o.h.l.p.b.s.LoadPlanTreePrinter [main] LoadPlan(entity=be.pxl.student.entity.Payment)
+    - Returns
+       - EntityReturnImpl(entity=be.pxl.student.entity.Payment, querySpaceUid=<gen:0>, path=be.pxl.student.entity.Payment)
+          - EntityAttributeFetchImpl(entity=be.pxl.student.entity.Account, querySpaceUid=<gen:1>, path=be.pxl.student.entity.Payment.account)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=be.pxl.student.entity.Payment)
+          - SQL table alias mapping - payment0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+          - JOIN (JoinDefinedByMetadata(account)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=be.pxl.student.entity.Account)
+                - SQL table alias mapping - account1_
+                - alias suffix - 1_
+                - suffixed key columns - {iban1_0_1_}
+
+2020-05-06 08:46:22,224 DEBUG o.h.l.e.p.EntityLoader [main] Static select for entity be.pxl.student.entity.Payment [NONE]: select payment0_.Id as id1_1_0_, payment0_.account_IBAN as account_6_1_0_, payment0_.amount as amount2_1_0_, payment0_.currency as currency3_1_0_, payment0_.date as date4_1_0_, payment0_.detail as detail5_1_0_, account1_.IBAN as iban1_0_1_, account1_.name as name2_0_1_ from Payment payment0_ left outer join Account account1_ on payment0_.account_IBAN=account1_.IBAN where payment0_.Id=?
+2020-05-06 08:46:22,224 TRACE o.h.l.p.b.i.AbstractLoadPlanBuildingAssociationVisitationStrategy [main]  Starting root entity : be.pxl.student.entity.Payment
+2020-05-06 08:46:22,224 DEBUG o.h.l.p.b.i.s.QuerySpacesImpl [main] Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@537451d5]
+2020-05-06 08:46:22,224 TRACE o.h.l.p.b.i.AbstractLoadPlanBuildingAssociationVisitationStrategy [main] Pushing fetch source to stack : org.hibernate.loader.plan.build.internal.returns.EntityReturnImpl@785d6a98
+2020-05-06 08:46:22,224 TRACE o.h.l.p.b.i.AbstractLoadPlanBuildingAssociationVisitationStrategy [main] .. Registering AssociationKey : AssociationKey(table=Payment, columns={Id}) -> org.hibernate.loader.plan.build.internal.returns.EntityReturnImpl@785d6a98
+2020-05-06 08:46:22,225 TRACE o.h.l.p.b.i.AbstractLoadPlanBuildingAssociationVisitationStrategy [main] >> Starting entity identifier : be.pxl.student.entity.Payment
+2020-05-06 08:46:22,225 DEBUG o.h.p.w.s.MetamodelGraphWalker [main] Visiting attribute path : account
+2020-05-06 08:46:22,225 TRACE o.h.l.p.b.i.AbstractLoadPlanBuildingAssociationVisitationStrategy [main] >> Starting attribute Attribute(name=account, type=be.pxl.student.entity.Account [non-identifier,association])
+2020-05-06 08:46:22,225 DEBUG o.h.l.p.b.i.s.QuerySpacesImpl [main] Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@614d7fbf]
+2020-05-06 08:46:22,225 TRACE o.h.l.p.b.i.AbstractLoadPlanBuildingAssociationVisitationStrategy [main] Pushing fetch source to stack : org.hibernate.loader.plan.build.internal.returns.EntityAttributeFetchImpl@6c06b1bc
+2020-05-06 08:46:22,225 TRACE o.h.l.p.b.i.AbstractLoadPlanBuildingAssociationVisitationStrategy [main] .... Registering AssociationKey : AssociationKey(table=Payment, columns={account_IBAN}) -> org.hibernate.loader.plan.build.internal.returns.EntityAttributeFetchImpl@6c06b1bc
+2020-05-06 08:46:22,226 TRACE o.h.l.p.b.i.AbstractLoadPlanBuildingAssociationVisitationStrategy [main] >>>> Starting entity identifier : be.pxl.student.entity.Account
+2020-05-06 08:46:22,226 DEBUG o.h.p.w.s.MetamodelGraphWalker [main] Visiting attribute path : account.name
+2020-05-06 08:46:22,226 TRACE o.h.l.p.b.i.AbstractLoadPlanBuildingAssociationVisitationStrategy [main] >>>> Starting attribute Attribute(name=name, type=string [non-identifier])
+2020-05-06 08:46:22,226 TRACE o.h.l.p.b.i.AbstractLoadPlanBuildingAssociationVisitationStrategy [main] <<<< Finishing up attribute : Attribute(name=name, type=string [non-identifier])
+2020-05-06 08:46:22,226 DEBUG o.h.p.w.s.MetamodelGraphWalker [main] Visiting attribute path : account.payments
+2020-05-06 08:46:22,226 DEBUG o.h.p.w.s.MetamodelGraphWalker [main] Property path deemed to be circular : account.payments
+2020-05-06 08:46:22,226 TRACE o.h.l.p.b.i.AbstractLoadPlanBuildingAssociationVisitationStrategy [main] Popped fetch owner from stack : org.hibernate.loader.plan.build.internal.returns.EntityAttributeFetchImpl@6c06b1bc
+2020-05-06 08:46:22,226 TRACE o.h.l.p.b.i.AbstractLoadPlanBuildingAssociationVisitationStrategy [main] << Finishing up attribute : Attribute(name=account, type=be.pxl.student.entity.Account [non-identifier,association])
+2020-05-06 08:46:22,226 DEBUG o.h.p.w.s.MetamodelGraphWalker [main] Visiting attribute path : amount
+2020-05-06 08:46:22,226 TRACE o.h.l.p.b.i.AbstractLoadPlanBuildingAssociationVisitationStrategy [main] >> Starting attribute Attribute(name=amount, type=float [non-identifier])
+2020-05-06 08:46:22,226 TRACE o.h.l.p.b.i.AbstractLoadPlanBuildingAssociationVisitationStrategy [main] << Finishing up attribute : Attribute(name=amount, type=float [non-identifier])
+2020-05-06 08:46:22,227 DEBUG o.h.p.w.s.MetamodelGraphWalker [main] Visiting attribute path : currency
+2020-05-06 08:46:22,227 TRACE o.h.l.p.b.i.AbstractLoadPlanBuildingAssociationVisitationStrategy [main] >> Starting attribute Attribute(name=currency, type=string [non-identifier])
+2020-05-06 08:46:22,227 TRACE o.h.l.p.b.i.AbstractLoadPlanBuildingAssociationVisitationStrategy [main] << Finishing up attribute : Attribute(name=currency, type=string [non-identifier])
+2020-05-06 08:46:22,227 DEBUG o.h.p.w.s.MetamodelGraphWalker [main] Visiting attribute path : date
+2020-05-06 08:46:22,227 TRACE o.h.l.p.b.i.AbstractLoadPlanBuildingAssociationVisitationStrategy [main] >> Starting attribute Attribute(name=date, type=LocalDateTime [non-identifier])
+2020-05-06 08:46:22,227 TRACE o.h.l.p.b.i.AbstractLoadPlanBuildingAssociationVisitationStrategy [main] << Finishing up attribute : Attribute(name=date, type=LocalDateTime [non-identifier])
+2020-05-06 08:46:22,227 DEBUG o.h.p.w.s.MetamodelGraphWalker [main] Visiting attribute path : detail
+2020-05-06 08:46:22,227 TRACE o.h.l.p.b.i.AbstractLoadPlanBuildingAssociationVisitationStrategy [main] >> Starting attribute Attribute(name=detail, type=string [non-identifier])
+2020-05-06 08:46:22,227 TRACE o.h.l.p.b.i.AbstractLoadPlanBuildingAssociationVisitationStrategy [main] << Finishing up attribute : Attribute(name=detail, type=string [non-identifier])
+2020-05-06 08:46:22,227 TRACE o.h.l.p.b.i.AbstractLoadPlanBuildingAssociationVisitationStrategy [main] Popped fetch owner from stack : org.hibernate.loader.plan.build.internal.returns.EntityReturnImpl@785d6a98
+2020-05-06 08:46:22,227 TRACE o.h.l.p.b.i.AbstractLoadPlanBuildingAssociationVisitationStrategy [main]  Finished root entity : be.pxl.student.entity.Payment
+2020-05-06 08:46:22,228 DEBUG o.h.l.p.b.i.FetchStyleLoadPlanBuildingAssociationVisitationStrategy [main] Building LoadPlan...
+2020-05-06 08:46:22,228 DEBUG o.h.l.p.e.i.LoadQueryJoinAndFetchProcessor [main] processing queryspace <gen:0>
+2020-05-06 08:46:22,228 DEBUG o.h.l.p.b.s.LoadPlanTreePrinter [main] LoadPlan(entity=be.pxl.student.entity.Payment)
+    - Returns
+       - EntityReturnImpl(entity=be.pxl.student.entity.Payment, querySpaceUid=<gen:0>, path=be.pxl.student.entity.Payment)
+          - EntityAttributeFetchImpl(entity=be.pxl.student.entity.Account, querySpaceUid=<gen:1>, path=be.pxl.student.entity.Payment.account)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=be.pxl.student.entity.Payment)
+          - SQL table alias mapping - payment0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+          - JOIN (JoinDefinedByMetadata(account)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=be.pxl.student.entity.Account)
+                - SQL table alias mapping - account1_
+                - alias suffix - 1_
+                - suffixed key columns - {iban1_0_1_}
+
+2020-05-06 08:46:22,228 DEBUG o.h.l.e.p.EntityLoader [main] Static select for entity be.pxl.student.entity.Payment [READ]: select payment0_.Id as id1_1_0_, payment0_.account_IBAN as account_6_1_0_, payment0_.amount as amount2_1_0_, payment0_.currency as currency3_1_0_, payment0_.date as date4_1_0_, payment0_.detail as detail5_1_0_, account1_.IBAN as iban1_0_1_, account1_.name as name2_0_1_ from Payment payment0_ left outer join Account account1_ on payment0_.account_IBAN=account1_.IBAN where payment0_.Id=?
+2020-05-06 08:46:22,229 DEBUG o.h.l.Loader [main] Static select for action ACTION_MERGE on entity be.pxl.student.entity.Payment: select payment0_.Id as id1_1_0_, payment0_.account_IBAN as account_6_1_0_, payment0_.amount as amount2_1_0_, payment0_.currency as currency3_1_0_, payment0_.date as date4_1_0_, payment0_.detail as detail5_1_0_ from Payment payment0_ where payment0_.Id=?
+2020-05-06 08:46:22,229 DEBUG o.h.l.Loader [main] Static select for action ACTION_REFRESH on entity be.pxl.student.entity.Payment: select payment0_.Id as id1_1_0_, payment0_.account_IBAN as account_6_1_0_, payment0_.amount as amount2_1_0_, payment0_.currency as currency3_1_0_, payment0_.date as date4_1_0_, payment0_.detail as detail5_1_0_ from Payment payment0_ where payment0_.Id=?
+2020-05-06 08:46:22,259 TRACE o.h.l.p.b.i.AbstractLoadPlanBuildingAssociationVisitationStrategy [main]  Starting root collection : be.pxl.student.entity.Account.payments
+2020-05-06 08:46:22,264 DEBUG o.h.l.p.b.i.s.QuerySpacesImpl [main] Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@1f3f434]
+2020-05-06 08:46:22,264 DEBUG o.h.l.p.b.i.s.QuerySpacesImpl [main] Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@26612078]
+2020-05-06 08:46:22,265 TRACE o.h.l.p.b.i.AbstractLoadPlanBuildingAssociationVisitationStrategy [main] Pushing collection reference to stack : org.hibernate.loader.plan.build.internal.returns.CollectionReturnImpl@54bc3bcf
+2020-05-06 08:46:22,265 TRACE o.h.l.p.b.i.AbstractLoadPlanBuildingAssociationVisitationStrategy [main]  Registering AssociationKey : AssociationKey(table=Payment, columns={account_IBAN}) -> null
+2020-05-06 08:46:22,272 TRACE o.h.l.p.b.i.AbstractLoadPlanBuildingAssociationVisitationStrategy [main]  Starting collection element graph : be.pxl.student.entity.Account.payments
+2020-05-06 08:46:22,272 TRACE o.h.l.p.b.i.AbstractLoadPlanBuildingAssociationVisitationStrategy [main] Pushing fetch source to stack : org.hibernate.loader.plan.build.internal.returns.CollectionFetchableElementEntityGraph@2d3c501b
+2020-05-06 08:46:22,272 TRACE o.h.l.p.b.i.AbstractLoadPlanBuildingAssociationVisitationStrategy [main] >> Starting entity identifier : be.pxl.student.entity.Payment
+2020-05-06 08:46:22,272 DEBUG o.h.p.w.s.MetamodelGraphWalker [main] Visiting attribute path : account
+2020-05-06 08:46:22,272 DEBUG o.h.p.w.s.MetamodelGraphWalker [main] Property path deemed to be circular : account
+2020-05-06 08:46:22,272 DEBUG o.h.p.w.s.MetamodelGraphWalker [main] Visiting attribute path : amount
+2020-05-06 08:46:22,272 TRACE o.h.l.p.b.i.AbstractLoadPlanBuildingAssociationVisitationStrategy [main] >> Starting attribute Attribute(name=amount, type=float [non-identifier])
+2020-05-06 08:46:22,272 TRACE o.h.l.p.b.i.AbstractLoadPlanBuildingAssociationVisitationStrategy [main] << Finishing up attribute : Attribute(name=amount, type=float [non-identifier])
+2020-05-06 08:46:22,272 DEBUG o.h.p.w.s.MetamodelGraphWalker [main] Visiting attribute path : currency
+2020-05-06 08:46:22,272 TRACE o.h.l.p.b.i.AbstractLoadPlanBuildingAssociationVisitationStrategy [main] >> Starting attribute Attribute(name=currency, type=string [non-identifier])
+2020-05-06 08:46:22,272 TRACE o.h.l.p.b.i.AbstractLoadPlanBuildingAssociationVisitationStrategy [main] << Finishing up attribute : Attribute(name=currency, type=string [non-identifier])
+2020-05-06 08:46:22,272 DEBUG o.h.p.w.s.MetamodelGraphWalker [main] Visiting attribute path : date
+2020-05-06 08:46:22,273 TRACE o.h.l.p.b.i.AbstractLoadPlanBuildingAssociationVisitationStrategy [main] >> Starting attribute Attribute(name=date, type=LocalDateTime [non-identifier])
+2020-05-06 08:46:22,273 TRACE o.h.l.p.b.i.AbstractLoadPlanBuildingAssociationVisitationStrategy [main] << Finishing up attribute : Attribute(name=date, type=LocalDateTime [non-identifier])
+2020-05-06 08:46:22,273 DEBUG o.h.p.w.s.MetamodelGraphWalker [main] Visiting attribute path : detail
+2020-05-06 08:46:22,273 TRACE o.h.l.p.b.i.AbstractLoadPlanBuildingAssociationVisitationStrategy [main] >> Starting attribute Attribute(name=detail, type=string [non-identifier])
+2020-05-06 08:46:22,273 TRACE o.h.l.p.b.i.AbstractLoadPlanBuildingAssociationVisitationStrategy [main] << Finishing up attribute : Attribute(name=detail, type=string [non-identifier])
+2020-05-06 08:46:22,273 TRACE o.h.l.p.b.i.AbstractLoadPlanBuildingAssociationVisitationStrategy [main] Popped fetch owner from stack : org.hibernate.loader.plan.build.internal.returns.CollectionFetchableElementEntityGraph@2d3c501b
+2020-05-06 08:46:22,273 TRACE o.h.l.p.b.i.AbstractLoadPlanBuildingAssociationVisitationStrategy [main]  Finished collection element graph : be.pxl.student.entity.Account.payments
+2020-05-06 08:46:22,273 TRACE o.h.l.p.b.i.AbstractLoadPlanBuildingAssociationVisitationStrategy [main] Popped collection reference from stack : org.hibernate.loader.plan.build.internal.returns.CollectionReturnImpl@54bc3bcf
+2020-05-06 08:46:22,273 TRACE o.h.l.p.b.i.AbstractLoadPlanBuildingAssociationVisitationStrategy [main]  Finished root collection : be.pxl.student.entity.Account.payments
+2020-05-06 08:46:22,273 DEBUG o.h.l.p.b.i.FetchStyleLoadPlanBuildingAssociationVisitationStrategy [main] Building LoadPlan...
+2020-05-06 08:46:22,295 DEBUG o.h.l.p.e.i.LoadQueryJoinAndFetchProcessor [main] processing queryspace <gen:0>
+2020-05-06 08:46:22,296 DEBUG o.h.l.p.b.s.LoadPlanTreePrinter [main] LoadPlan(collection=be.pxl.student.entity.Account.payments)
+    - Returns
+       - CollectionReturnImpl(collection=be.pxl.student.entity.Account.payments, querySpaceUid=<gen:0>, path=[be.pxl.student.entity.Account.payments])
+          - (collection element) CollectionFetchableElementEntityGraph(entity=be.pxl.student.entity.Payment, querySpaceUid=<gen:1>, path=[be.pxl.student.entity.Account.payments].<elements>)
+    - QuerySpaces
+       - CollectionQuerySpaceImpl(uid=<gen:0>, collection=be.pxl.student.entity.Account.payments)
+          - SQL table alias mapping - payments0_
+          - alias suffix - 0_
+          - suffixed key columns - {account_6_1_0_}
+          - entity-element alias suffix - 1_
+          - 1_entity-element suffixed key columns - id1_1_1_
+          - JOIN (JoinDefinedByMetadata(elements)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=be.pxl.student.entity.Payment)
+                - SQL table alias mapping - payments0_
+                - alias suffix - 1_
+                - suffixed key columns - {id1_1_1_}
+
+2020-05-06 08:46:22,298 DEBUG o.h.l.c.p.CollectionLoader [main] Static select for collection be.pxl.student.entity.Account.payments: select payments0_.account_IBAN as account_6_1_0_, payments0_.Id as id1_1_0_, payments0_.Id as id1_1_1_, payments0_.account_IBAN as account_6_1_1_, payments0_.amount as amount2_1_1_, payments0_.currency as currency3_1_1_, payments0_.date as date4_1_1_, payments0_.detail as detail5_1_1_ from Payment payments0_ where payments0_.account_IBAN=?
+2020-05-06 08:46:22,393 TRACE o.h.m.i.MetadataContext [main] Wrapping up metadata context...
+2020-05-06 08:46:22,397 TRACE o.h.m.i.MetadataContext [main] Starting entity [be.pxl.student.entity.Account]
+2020-05-06 08:46:22,397 TRACE o.h.m.i.AttributeFactory [main] Building identifier attribute [Account.IBAN]
+2020-05-06 08:46:22,401 TRACE o.h.m.i.AttributeFactory [main] Starting attribute metadata determination [IBAN]
+2020-05-06 08:46:22,406 TRACE o.h.m.i.AttributeFactory [main]     Determined member [private java.lang.String be.pxl.student.entity.Account.IBAN]
+2020-05-06 08:46:22,407 TRACE o.h.m.i.AttributeFactory [main]     Determined type [name=string, class=org.hibernate.type.StringType]
+2020-05-06 08:46:22,446 TRACE o.h.m.i.AttributeFactory [main] Building attribute [Account.name]
+2020-05-06 08:46:22,446 TRACE o.h.m.i.AttributeFactory [main] Starting attribute metadata determination [name]
+2020-05-06 08:46:22,446 TRACE o.h.m.i.AttributeFactory [main]     Determined member [private java.lang.String be.pxl.student.entity.Account.name]
+2020-05-06 08:46:22,446 TRACE o.h.m.i.AttributeFactory [main]     Determined type [name=string, class=org.hibernate.type.StringType]
+2020-05-06 08:46:22,447 TRACE o.h.m.i.AttributeFactory [main] Building attribute [Account.payments]
+2020-05-06 08:46:22,447 TRACE o.h.m.i.AttributeFactory [main] Starting attribute metadata determination [payments]
+2020-05-06 08:46:22,447 TRACE o.h.m.i.AttributeFactory [main]     Determined member [private java.util.List be.pxl.student.entity.Account.payments]
+2020-05-06 08:46:22,447 TRACE o.h.m.i.AttributeFactory [main]     Determined type [name=java.util.Collection(be.pxl.student.entity.Account.payments), class=org.hibernate.type.BagType]
+2020-05-06 08:46:22,487 TRACE o.h.m.i.MetadataContext [main] Completed entity [be.pxl.student.entity.Account]
+2020-05-06 08:46:22,488 TRACE o.h.m.i.MetadataContext [main] Starting entity [be.pxl.student.entity.Payment]
+2020-05-06 08:46:22,488 TRACE o.h.m.i.AttributeFactory [main] Building identifier attribute [Payment.Id]
+2020-05-06 08:46:22,488 TRACE o.h.m.i.AttributeFactory [main] Starting attribute metadata determination [Id]
+2020-05-06 08:46:22,488 TRACE o.h.m.i.AttributeFactory [main]     Determined member [private int be.pxl.student.entity.Payment.Id]
+2020-05-06 08:46:22,488 TRACE o.h.m.i.AttributeFactory [main]     Determined type [name=integer, class=org.hibernate.type.IntegerType]
+2020-05-06 08:46:22,488 TRACE o.h.m.i.AttributeFactory [main] Building attribute [Payment.account]
+2020-05-06 08:46:22,488 TRACE o.h.m.i.AttributeFactory [main] Starting attribute metadata determination [account]
+2020-05-06 08:46:22,488 TRACE o.h.m.i.AttributeFactory [main]     Determined member [private be.pxl.student.entity.Account be.pxl.student.entity.Payment.account]
+2020-05-06 08:46:22,488 TRACE o.h.m.i.AttributeFactory [main]     Determined type [name=be.pxl.student.entity.Account, class=org.hibernate.type.ManyToOneType]
+2020-05-06 08:46:22,488 TRACE o.h.m.i.AttributeFactory [main] Building attribute [Payment.amount]
+2020-05-06 08:46:22,488 TRACE o.h.m.i.AttributeFactory [main] Starting attribute metadata determination [amount]
+2020-05-06 08:46:22,488 TRACE o.h.m.i.AttributeFactory [main]     Determined member [private float be.pxl.student.entity.Payment.amount]
+2020-05-06 08:46:22,488 TRACE o.h.m.i.AttributeFactory [main]     Determined type [name=float, class=org.hibernate.type.FloatType]
+2020-05-06 08:46:22,488 TRACE o.h.m.i.AttributeFactory [main] Building attribute [Payment.currency]
+2020-05-06 08:46:22,488 TRACE o.h.m.i.AttributeFactory [main] Starting attribute metadata determination [currency]
+2020-05-06 08:46:22,488 TRACE o.h.m.i.AttributeFactory [main]     Determined member [private java.lang.String be.pxl.student.entity.Payment.currency]
+2020-05-06 08:46:22,488 TRACE o.h.m.i.AttributeFactory [main]     Determined type [name=string, class=org.hibernate.type.StringType]
+2020-05-06 08:46:22,488 TRACE o.h.m.i.AttributeFactory [main] Building attribute [Payment.date]
+2020-05-06 08:46:22,488 TRACE o.h.m.i.AttributeFactory [main] Starting attribute metadata determination [date]
+2020-05-06 08:46:22,488 TRACE o.h.m.i.AttributeFactory [main]     Determined member [private java.time.LocalDateTime be.pxl.student.entity.Payment.date]
+2020-05-06 08:46:22,488 TRACE o.h.m.i.AttributeFactory [main]     Determined type [name=LocalDateTime, class=org.hibernate.type.LocalDateTimeType]
+2020-05-06 08:46:22,488 TRACE o.h.m.i.AttributeFactory [main] Building attribute [Payment.detail]
+2020-05-06 08:46:22,489 TRACE o.h.m.i.AttributeFactory [main] Starting attribute metadata determination [detail]
+2020-05-06 08:46:22,489 TRACE o.h.m.i.AttributeFactory [main]     Determined member [private java.lang.String be.pxl.student.entity.Payment.detail]
+2020-05-06 08:46:22,489 TRACE o.h.m.i.AttributeFactory [main]     Determined type [name=string, class=org.hibernate.type.StringType]
+2020-05-06 08:46:22,492 TRACE o.h.m.i.MetadataContext [main] Completed entity [be.pxl.student.entity.Payment]
+2020-05-06 08:46:22,529 TRACE o.h.s.i.AbstractServiceRegistryImpl [main] Initializing service [role=org.hibernate.tool.schema.spi.SchemaManagementTool]
+2020-05-06 08:46:22,603 TRACE o.h.s.i.AbstractServiceRegistryImpl [main] Initializing service [role=org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform]
+2020-05-06 08:46:22,615 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.apache.openejb.hibernate.OpenEJBJtaPlatform2]
+2020-05-06 08:46:22,616 TRACE o.h.r.t.b.j.i.DdlTransactionIsolatorJtaImpl [main] DdlTransactionIsolatorJtaImpl#prepare: JtaPlatform -> org.apache.openejb.hibernate.OpenEJBJtaPlatform2@72168258
+2020-05-06 08:46:22,616 TRACE o.h.r.t.b.j.i.DdlTransactionIsolatorJtaImpl [main] DdlTransactionIsolatorJtaImpl#prepare: TransactionManager -> org.apache.openejb.resource.GeronimoTransactionManagerFactory$DestroyableTransactionManager@4af84a76
+2020-05-06 08:46:22,616 TRACE o.h.r.t.b.j.i.DdlTransactionIsolatorJtaImpl [main] DdlTransactionIsolatorJtaImpl#prepare: suspended Transaction -> null
+2020-05-06 08:46:22,676 TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl [main] Normalizing identifier quoting [PUBLIC]
+2020-05-06 08:46:22,676 TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl [main] Normalizing identifier quoting [SYSTEM_LOBS]
+2020-05-06 08:46:22,676 TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl [main] Normalizing identifier quoting [LOB_ID]
+2020-05-06 08:46:22,709 TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl [main] Normalizing identifier quoting for object name [PUBLIC]
+2020-05-06 08:46:22,713 TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl [main] Rendering unquoted identifier [PUBLIC] in upper case for use in DatabaseMetaData
+2020-05-06 08:46:22,769 TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl [main] Normalizing identifier quoting for object name [Account]
+2020-05-06 08:46:22,769 TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl [main] Rendering unquoted identifier [Account] in upper case for use in DatabaseMetaData
+2020-05-06 08:46:22,770 DEBUG o.h.SQL [main] create table Account (IBAN varchar(255) not null, name varchar(255), primary key (IBAN))
+2020-05-06 08:46:22,772 TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl [main] Normalizing identifier quoting for object name [Payment]
+2020-05-06 08:46:22,772 TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl [main] Rendering unquoted identifier [Payment] in upper case for use in DatabaseMetaData
+2020-05-06 08:46:22,772 DEBUG o.h.SQL [main] create table Payment (Id integer generated by default as identity (start with 1), amount float not null, currency varchar(255), date timestamp, detail varchar(255), account_IBAN varchar(255), primary key (Id))
+2020-05-06 08:46:22,774 TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl [main] Normalizing identifier quoting for object name [Account]
+2020-05-06 08:46:22,774 TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl [main] Rendering unquoted identifier [Account] in upper case for use in DatabaseMetaData
+2020-05-06 08:46:22,778 TRACE o.h.t.h.UniqueConstraintSchemaUpdateStrategy [main] Interpreting UniqueConstraintSchemaUpdateStrategy from setting : null
+2020-05-06 08:46:22,779 TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl [main] Normalizing identifier quoting for object name [Payment]
+2020-05-06 08:46:22,779 TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl [main] Rendering unquoted identifier [Payment] in upper case for use in DatabaseMetaData
+2020-05-06 08:46:22,779 TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl [main] Normalizing identifier quoting for object name [Account]
+2020-05-06 08:46:22,779 TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl [main] Rendering unquoted identifier [Account] in upper case for use in DatabaseMetaData
+2020-05-06 08:46:22,779 TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl [main] Normalizing identifier quoting for object name [Payment]
+2020-05-06 08:46:22,779 TRACE o.h.e.j.e.i.NormalizingIdentifierHelperImpl [main] Rendering unquoted identifier [Payment] in upper case for use in DatabaseMetaData
+2020-05-06 08:46:22,779 DEBUG o.h.SQL [main] alter table Payment add constraint FK1i4swmssmrv7pp65ie2upf80y foreign key (account_IBAN) references Account
+2020-05-06 08:46:22,833 DEBUG o.h.q.s.NamedQueryRepository [main] Checking 0 named HQL queries
+2020-05-06 08:46:22,833 DEBUG o.h.q.s.NamedQueryRepository [main] Checking 0 named SQL queries
+2020-05-06 08:46:22,877 TRACE o.h.t.s.TypeConfiguration$Scope [main] Handling #sessionFactoryCreated from [org.hibernate.internal.SessionFactoryImpl@24615687] for TypeConfiguration
+2020-05-06 08:46:22,887 DEBUG o.h.i.SessionFactoryRegistry [main] Initializing SessionFactoryRegistry : org.hibernate.internal.SessionFactoryRegistry@1397b141
+2020-05-06 08:46:22,888 DEBUG o.h.i.SessionFactoryRegistry [main] Registering SessionFactory: 8851eba4-5b2d-4124-8870-1d9e27732f91 (<unnamed>)
+2020-05-06 08:46:22,888 DEBUG o.h.i.SessionFactoryRegistry [main] Not binding SessionFactory to JNDI, no JNDI name configured
+2020-05-06 08:47:28,929 DEBUG o.h.i.SessionFactoryImpl [Thread-17] HHH000031: Closing
+2020-05-06 08:47:28,929 TRACE o.h.e.q.s.QueryPlanCache [Thread-17] Cleaning QueryPlan Cache
+2020-05-06 08:47:28,929 TRACE o.h.t.s.TypeConfiguration$Scope [Thread-17] Handling #sessionFactoryClosed from [org.hibernate.internal.SessionFactoryImpl@24615687] for TypeConfiguration
+2020-05-06 08:47:28,929 DEBUG o.h.t.s.TypeConfiguration$Scope [Thread-17] Un-scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration$Scope@7d4bc497] from SessionFactory [org.hibernate.internal.SessionFactoryImpl@24615687]
+2020-05-06 08:47:28,932 DEBUG o.h.s.i.AbstractServiceRegistryImpl [Thread-17] Implicitly destroying ServiceRegistry on de-registration of all child ServiceRegistries
+2020-05-06 08:47:28,932 DEBUG o.h.b.r.i.BootstrapServiceRegistryImpl [Thread-17] Implicitly destroying Boot-strap registry on de-registration of all child ServiceRegistries
